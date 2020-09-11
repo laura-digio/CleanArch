@@ -1,0 +1,8 @@
+Pods/*
+Podfile.lock
+xcuserdata
+.DS_Store
+
+# Keeps secrets away from Version Control
+GoogleService-Info.plist
+
