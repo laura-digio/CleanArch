@@ -16,6 +16,7 @@ target 'CleanArch' do
   pod 'Kingfisher'
   pod 'Firebase/Messaging'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
 
 end
 
