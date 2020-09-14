@@ -10,9 +10,12 @@ target 'CleanArch' do
 
   # Pods for CleanArch
   pod 'SwiftLint'
+  pod 'RealmSwift'
+  pod 'Realm', :modular_headers => true
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'AlamofireObjectMapper'
+  pod 'Alamofire', '~> 4.9.1'
+  pod 'AlamofireObjectMapper', '~> 5.2.1'
   pod 'Kingfisher'
   pod 'Firebase/Messaging'
   pod 'Firebase/Analytics'

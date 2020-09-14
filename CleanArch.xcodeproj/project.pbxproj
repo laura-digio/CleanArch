@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C943111C8B3A0972B947CEF /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B7DD7DC58D0BFD5DA1F930 /* MainAssembly.swift */; };
+		355971E50078C41D9C51CC9C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A79F6EA304F9FEDE45F8964 /* MainViewController.swift */; };
+		3789A6E59FB9505B2C9DEFF2 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539E15C728BF5CCF26B2AF6 /* MainInteractor.swift */; };
+		87CC1C83D9346D321BC6D595 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A692F5C15AAB6F64B91A134C /* MainPresenter.swift */; };
+		D3089900250FA15400C1F151 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30898F4250FA15400C1F151 /* Repository.swift */; };
+		D308998B250FA9E700C1F151 /* NetworkClientConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308998A250FA9E700C1F151 /* NetworkClientConstants.swift */; };
 		D3089A9B250B8A4700FBFD1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3089A9A250B8A4700FBFD1B /* GoogleService-Info.plist */; };
 		D3A57E6524C037FF00368EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A57E6424C037FF00368EA1 /* AppDelegate.swift */; };
 		D3A57E6924C037FF00368EA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A57E6824C037FF00368EA1 /* ViewController.swift */; };
 		D3A57E6C24C037FF00368EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A57E6A24C037FF00368EA1 /* Main.storyboard */; };
 		D3A57E6E24C0380000368EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A57E6D24C0380000368EA1 /* Assets.xcassets */; };
 		D3A57E7124C0380000368EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A57E6F24C0380000368EA1 /* LaunchScreen.storyboard */; };
+		D3AA2F58250FAECB00A51E9B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */; };
 		D3ABCA2D24E14EDE00AE8C8A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCA2C24E14EDE00AE8C8A /* README.md */; };
 		D9A5AD5891186EF8D170DC4E /* libPods-CleanArch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCABC3267A1CEA26A40CF4E /* libPods-CleanArch.a */; };
+		FEC282C61EDE0898AD261C71 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBBC2EE2971679B8A5BC272 /* MainWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28B7DD7DC58D0BFD5DA1F930 /* MainAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		2A79F6EA304F9FEDE45F8964 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		43171471FD996601B796B406 /* Pods-CleanArch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArch.release.xcconfig"; path = "Target Support Files/Pods-CleanArch/Pods-CleanArch.release.xcconfig"; sourceTree = "<group>"; };
+		5DBBC2EE2971679B8A5BC272 /* MainWireframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		7CCABC3267A1CEA26A40CF4E /* libPods-CleanArch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CleanArch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A692F5C15AAB6F64B91A134C /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		D30898F4250FA15400C1F151 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		D308998A250FA9E700C1F151 /* NetworkClientConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientConstants.swift; sourceTree = "<group>"; };
 		D3089A99250B861700FBFD1B /* CleanArch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanArch.entitlements; sourceTree = "<group>"; };
 		D3089A9A250B8A4700FBFD1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3A57E6124C037FF00368EA1 /* CleanArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,7 +43,9 @@
 		D3A57E6D24C0380000368EA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3A57E7024C0380000368EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3A57E7224C0380000368EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		D3ABCA2C24E14EDE00AE8C8A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F539E15C728BF5CCF26B2AF6 /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		F641347FF224C9835A1FC854 /* Pods-CleanArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArch.debug.xcconfig"; path = "Target Support Files/Pods-CleanArch/Pods-CleanArch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B92B2F1E7966CD75D25D1CE /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				A692F5C15AAB6F64B91A134C /* MainPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		2749644BE3C37EBEBF1AA810 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E6DF3F41B41837DE279F8D9E /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		28231521021EE1EDE0555782 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +86,44 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		296EB00E23288D3B9A70EF78 /* Wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				5DBBC2EE2971679B8A5BC272 /* MainWireframe.swift */,
+			);
+			path = Wireframes;
+			sourceTree = "<group>";
+		};
 		4FD0AD5061C7FDE3997E2496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7CCABC3267A1CEA26A40CF4E /* libPods-CleanArch.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D30898EC250FA15400C1F151 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D30898ED250FA15400C1F151 /* Repository */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D30898ED250FA15400C1F151 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D30898F4250FA15400C1F151 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D3089980250FA85500C1F151 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D308998A250FA9E700C1F151 /* NetworkClientConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		D3A57E5824C037FF00368EA1 = {
@@ -92,8 +156,56 @@
 				D3A57E6F24C0380000368EA1 /* LaunchScreen.storyboard */,
 				D3A57E7224C0380000368EA1 /* Info.plist */,
 				D3089A9A250B8A4700FBFD1B /* GoogleService-Info.plist */,
+				D3089980250FA85500C1F151 /* Constants */,
+				D30898EC250FA15400C1F151 /* Models */,
+				2749644BE3C37EBEBF1AA810 /* Modules */,
+				D3AA2F4D250FAECB00A51E9B /* WebServices */,
 			);
 			path = CleanArch;
+			sourceTree = "<group>";
+		};
+		D3AA2F4D250FAECB00A51E9B /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		DB56CCF2F17E4DEFA8ECEF1A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A79F6EA304F9FEDE45F8964 /* MainViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE827E795C769E057EC7A896 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F539E15C728BF5CCF26B2AF6 /* MainInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		E6DF3F41B41837DE279F8D9E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F32BCD3291EEA9BB3D177CA7 /* Assembly */,
+				DE827E795C769E057EC7A896 /* Interactors */,
+				296EB00E23288D3B9A70EF78 /* Wireframes */,
+				0B92B2F1E7966CD75D25D1CE /* Presenters */,
+				DB56CCF2F17E4DEFA8ECEF1A /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F32BCD3291EEA9BB3D177CA7 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				28B7DD7DC58D0BFD5DA1F930 /* MainAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +345,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3A57E6924C037FF00368EA1 /* ViewController.swift in Sources */,
+				D3AA2F58250FAECB00A51E9B /* NetworkClient.swift in Sources */,
 				D3A57E6524C037FF00368EA1 /* AppDelegate.swift in Sources */,
+				D308998B250FA9E700C1F151 /* NetworkClientConstants.swift in Sources */,
+				D3089900250FA15400C1F151 /* Repository.swift in Sources */,
+				2C943111C8B3A0972B947CEF /* MainAssembly.swift in Sources */,
+				3789A6E59FB9505B2C9DEFF2 /* MainInteractor.swift in Sources */,
+				FEC282C61EDE0898AD261C71 /* MainWireframe.swift in Sources */,
+				87CC1C83D9346D321BC6D595 /* MainPresenter.swift in Sources */,
+				355971E50078C41D9C51CC9C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

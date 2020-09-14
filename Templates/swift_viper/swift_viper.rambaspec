@@ -1,0 +1,23 @@
+# Template information section
+name: "swift_viper"
+summary: "VIPER module template"
+author: "Digio"
+version: "3.0"
+license: "MIT"
+
+# The declarations for code files
+code_files:
+# Assembly layer
+- {name: Assembly/Assembly.swift, path: Code/Assembly/assembly.swift.liquid}
+
+# Interactors layer
+- {name: Interactors/Interactor.swift, path: Code/Interactors/interactor.swift.liquid}
+
+# Wireframes layer
+- {name: Wireframes/Wireframe.swift, path: Code/Wireframes/wireframe.swift.liquid}
+
+# Presenters layer
+- {name: Presenters/Presenter.swift, path: Code/Presenters/presenter.swift.liquid}
+
+# Views layer
+- {name: Views/ViewController.swift, path: Code/Views/viewcontroller.swift.liquid}

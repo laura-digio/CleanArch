@@ -1,0 +1,25 @@
+### Headers settings
+company: DIGIO
+
+### Xcode project settings
+project_name: CleanArch
+xcodeproj_path: CleanArch.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: CleanArch
+# Multiple targets
+# project_targets: [CleanArch, CleanArch]
+
+# The file path for new modules
+project_file_path: CleanArch/Modules
+
+# The Xcode group path to new modules
+project_group_path: CleanArch/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+- {name: swift_viper}

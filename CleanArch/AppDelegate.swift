@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         window?.rootViewController = storyboard.instantiateInitialViewController()
+        //window?.rootViewController = MainWireframe.mainViewController()
         window?.makeKeyAndVisible()
 
         // Initialize Firebase in your app
