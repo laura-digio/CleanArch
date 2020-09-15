@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 # ignore all warnings from all pods
 inhibit_all_warnings!
@@ -10,6 +10,7 @@ target 'CleanArch' do
 
   # Pods for CleanArch
   pod 'SwiftLint'
+  pod 'SwiftGen'
   pod 'RealmSwift'
   pod 'Realm', :modular_headers => true
   pod 'RxSwift'
@@ -20,14 +21,12 @@ target 'CleanArch' do
   pod 'Firebase/Messaging'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
-
 end
-
 
 post_install do |pi|
     pi.pods_project.targets.each do |t|
       t.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '10.0'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
       end
     end
 end

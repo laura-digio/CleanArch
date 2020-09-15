@@ -1,0 +1,15 @@
+input_dir: CleanArch/Assets
+output_dir: CleanArch/Assets/Generated
+strings:
+  inputs: Localizables/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: Strings.swift
+xcassets:
+  inputs:
+    - Images.xcassets
+    - Colors.xcassets
+  outputs:
+    - templateName: swift5
+      output: Assets.swift
+

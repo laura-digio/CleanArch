@@ -9,5 +9,13 @@
 import Foundation
 
 class MainAssembly {
+    let repository = Repository.sharedInstance
 
+    func viewMainModuleWithWireframe(_ wireframe: MainWireframe) -> MainViewController {
+        let interactor = MainInteractor(repository: repository)
+        let presenter = MainPresenter(interactor: interactor, wireframe: wireframe)
+
+        let controllers = [ListWireframe().mainViewController(), SettingsWireframe().mainViewController()]
+        return MainViewController(viewControllers: controllers, presenter: presenter)
+    }
 }

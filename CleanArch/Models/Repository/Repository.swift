@@ -6,7 +6,6 @@
 //  Copyright © 2020 DIGIO. All rights reserved.
 //
 
-import Foundation
 import RealmSwift
 import Alamofire
 import RxSwift
@@ -18,7 +17,7 @@ class Repository {
     let dbQueue = DispatchQueue(label: "DBQueue")
     let dbScheduler: SerialDispatchQueueScheduler
 
-    var isConnectedToInternet: Bool {
+    var isReachable: Bool {
         return NetworkReachabilityManager()?.isReachable ?? false
     }
 

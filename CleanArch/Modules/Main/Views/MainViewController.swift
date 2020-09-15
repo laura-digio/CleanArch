@@ -9,13 +9,16 @@
 import Foundation
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UITabBarController {
     private let presenter: MainPresenter
 
-    init(presenter: MainPresenter) {
+    init(viewControllers: [UIViewController & TabbedProtocol], presenter: MainPresenter) {
         self.presenter = presenter
 
-        super.init(nibName: String.init(describing: type(of: self)), bundle: Bundle.init(for: type(of: self)))
+        super.init(nibName: nil, bundle: nil)
+
+        self.viewControllers = viewControllers
+        configureTabs()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -24,5 +27,19 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension MainViewController {
+    private func configureTabs() {
+        if let viewControllers: [UIViewController & TabbedProtocol] = self.viewControllers as? [UIViewController & TabbedProtocol] {
+            for (index, viewController) in viewControllers.enumerated() {
+                if let tabItem: UITabBarItem = self.tabBar.items?[index] {
+                    tabItem.selectedImage = viewController.tabSelectedImage()?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+                    tabItem.image = viewController.tabImage()?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+                    tabItem.title = viewController.tabTitle()
+                }
+            }
+        }
     }
 }

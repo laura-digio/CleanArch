@@ -9,7 +9,6 @@
 import Alamofire
 import AlamofireObjectMapper
 import ObjectMapper
-import RealmSwift
 import RxSwift
 
 class NetworkClient: SessionManager {
@@ -33,6 +32,8 @@ class NetworkClient: SessionManager {
                         observer(.error(response.error!))
                     }
                 })
+
+            debugPrint(myRequest as Any)
 
             return Disposables.create {
                 myRequest?.cancel()
