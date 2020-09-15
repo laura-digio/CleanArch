@@ -80,7 +80,7 @@ class SettingsViewController: UIViewController {
     }
 
     func userWantsToShowAnotherViewController() {
-        presenter.userWantsToShowAnotherViewController(self.navigationController)
+        presenter.userWantsToShowAnotherViewController(navigationController)
     }
 }
 ```
