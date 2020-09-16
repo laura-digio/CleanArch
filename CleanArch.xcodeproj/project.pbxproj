@@ -20,12 +20,9 @@
 		BB29FF06DCB0FE2F7ECB6963 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20933CF5D783E2EBE45EB65 /* ListWireframe.swift */; };
 		D3089900250FA15400C1F151 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30898F4250FA15400C1F151 /* Repository.swift */; };
 		D308998B250FA9E700C1F151 /* NetworkClientConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308998A250FA9E700C1F151 /* NetworkClientConstants.swift */; };
-		D3089A9B250B8A4700FBFD1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3089A9A250B8A4700FBFD1B /* GoogleService-Info.plist */; };
 		D33279EC2510D2A100C9D206 /* TabbedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33279EB2510D2A100C9D206 /* TabbedProtocol.swift */; };
 		D33279EE2510D5B000C9D206 /* ListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33279ED2510D5B000C9D206 /* ListNavigationController.swift */; };
-		D33279FA2510D80B00C9D206 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33279F02510D80A00C9D206 /* Images.xcassets */; };
 		D33279FB2510D80B00C9D206 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D33279F22510D80A00C9D206 /* Localizable.strings */; };
-		D33279FF2510DC6100C9D206 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33279FE2510DC6100C9D206 /* Colors.xcassets */; };
 		D3327A052510F19000C9D206 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A032510F19000C9D206 /* Strings.swift */; };
 		D3327A062510F19000C9D206 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A042510F19000C9D206 /* Assets.swift */; };
 		D3327A0C2510F2CD00C9D206 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A0A2510F2CD00C9D206 /* String+Localized.swift */; };
@@ -34,9 +31,11 @@
 		D3327A172511031A00C9D206 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A152511031A00C9D206 /* SettingsViewController.swift */; };
 		D3327A182511031A00C9D206 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3327A162511031A00C9D206 /* SettingsViewController.xib */; };
 		D3A57E6524C037FF00368EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A57E6424C037FF00368EA1 /* AppDelegate.swift */; };
-		D3A57E7124C0380000368EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3A57E6F24C0380000368EA1 /* LaunchScreen.storyboard */; };
 		D3AA2F58250FAECB00A51E9B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */; };
-		D3ABCA2D24E14EDE00AE8C8A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D3ABCA2C24E14EDE00AE8C8A /* README.md */; };
+		D3D4B6F72512111A00F9B234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F22512111A00F9B234 /* Images.xcassets */; };
+		D3D4B6F82512111A00F9B234 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F42512111A00F9B234 /* GoogleService-Info.plist */; };
+		D3D4B6F92512111A00F9B234 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F62512111A00F9B234 /* Colors.xcassets */; };
+		D3D4B6FE2512114A00F9B234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */; };
 		D9A5AD5891186EF8D170DC4E /* libPods-CleanArch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCABC3267A1CEA26A40CF4E /* libPods-CleanArch.a */; };
 		E00B95D7A4878B6D1B371675 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3728B116853BD5159D140 /* ListAssembly.swift */; };
 		FEC282C61EDE0898AD261C71 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBBC2EE2971679B8A5BC272 /* MainWireframe.swift */; };
@@ -60,14 +59,10 @@
 		D20933CF5D783E2EBE45EB65 /* ListWireframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		D30898F4250FA15400C1F151 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		D308998A250FA9E700C1F151 /* NetworkClientConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientConstants.swift; sourceTree = "<group>"; };
-		D3089A99250B861700FBFD1B /* CleanArch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanArch.entitlements; sourceTree = "<group>"; };
-		D3089A9A250B8A4700FBFD1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D33279EB2510D2A100C9D206 /* TabbedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedProtocol.swift; sourceTree = "<group>"; };
 		D33279ED2510D5B000C9D206 /* ListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavigationController.swift; sourceTree = "<group>"; };
-		D33279F02510D80A00C9D206 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D33279F52510D80A00C9D206 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D33279F62510D80A00C9D206 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		D33279FE2510DC6100C9D206 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D3327A032510F19000C9D206 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		D3327A042510F19000C9D206 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		D3327A0A2510F2CD00C9D206 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
@@ -77,10 +72,14 @@
 		D3327A162511031A00C9D206 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		D3A57E6124C037FF00368EA1 /* CleanArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A57E6424C037FF00368EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3A57E7024C0380000368EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D3A57E7224C0380000368EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		D3ABCA2C24E14EDE00AE8C8A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		D3D4B6F22512111A00F9B234 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3D4B6F42512111A00F9B234 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3D4B6F62512111A00F9B234 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3D4B6FC2512114A00F9B234 /* CleanArch.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CleanArch.entitlements; sourceTree = "<group>"; };
+		D3D4B6FD2512114A00F9B234 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F539E15C728BF5CCF26B2AF6 /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		F641347FF224C9835A1FC854 /* Pods-CleanArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArch.debug.xcconfig"; path = "Target Support Files/Pods-CleanArch/Pods-CleanArch.debug.xcconfig"; sourceTree = "<group>"; };
 		F886F39FCAADC614939EAE09 /* ListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
@@ -257,9 +256,10 @@
 			isa = PBXGroup;
 			children = (
 				D3327A022510F19000C9D206 /* Generated */,
-				D33279F02510D80A00C9D206 /* Images.xcassets */,
-				D33279FE2510DC6100C9D206 /* Colors.xcassets */,
 				D33279F12510D80A00C9D206 /* Localizables */,
+				D3D4B6F12512111A00F9B234 /* Images */,
+				D3D4B6F52512111A00F9B234 /* Colors */,
+				D3D4B6F32512111A00F9B234 /* Config */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -319,17 +319,14 @@
 		D3A57E6324C037FF00368EA1 /* CleanArch */ = {
 			isa = PBXGroup;
 			children = (
-				D3089A99250B861700FBFD1B /* CleanArch.entitlements */,
-				D3A57E6424C037FF00368EA1 /* AppDelegate.swift */,
-				D3A57E6F24C0380000368EA1 /* LaunchScreen.storyboard */,
-				D3A57E7224C0380000368EA1 /* Info.plist */,
-				D3089A9A250B8A4700FBFD1B /* GoogleService-Info.plist */,
 				D33279EF2510D80A00C9D206 /* Assets */,
 				D3089980250FA85500C1F151 /* Constants */,
 				D3327A072510F2CD00C9D206 /* Extensions */,
 				D30898EC250FA15400C1F151 /* Models */,
 				2749644BE3C37EBEBF1AA810 /* Modules */,
 				D3AA2F4D250FAECB00A51E9B /* WebServices */,
+				D3A57E6424C037FF00368EA1 /* AppDelegate.swift */,
+				D3D4B6FA2512114A00F9B234 /* Supporting Files */,
 			);
 			path = CleanArch;
 			sourceTree = "<group>";
@@ -340,6 +337,40 @@
 				D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */,
 			);
 			path = WebServices;
+			sourceTree = "<group>";
+		};
+		D3D4B6F12512111A00F9B234 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D3D4B6F22512111A00F9B234 /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D3D4B6F32512111A00F9B234 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D3D4B6F42512111A00F9B234 /* GoogleService-Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D3D4B6F52512111A00F9B234 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				D3D4B6F62512111A00F9B234 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		D3D4B6FA2512114A00F9B234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */,
+				D3D4B6FC2512114A00F9B234 /* CleanArch.entitlements */,
+				D3D4B6FD2512114A00F9B234 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D6C401E30FEA854E181C7060 /* Views */ = {
@@ -469,14 +500,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A57E7124C0380000368EA1 /* LaunchScreen.storyboard in Resources */,
-				D3089A9B250B8A4700FBFD1B /* GoogleService-Info.plist in Resources */,
+				D3D4B6F92512111A00F9B234 /* Colors.xcassets in Resources */,
+				D3D4B6FE2512114A00F9B234 /* LaunchScreen.storyboard in Resources */,
+				D3D4B6F82512111A00F9B234 /* GoogleService-Info.plist in Resources */,
+				D3D4B6F72512111A00F9B234 /* Images.xcassets in Resources */,
 				D3327A102510F87800C9D206 /* ListViewController.xib in Resources */,
 				D3327A182511031A00C9D206 /* SettingsViewController.xib in Resources */,
 				D33279FB2510D80B00C9D206 /* Localizable.strings in Resources */,
-				D3ABCA2D24E14EDE00AE8C8A /* README.md in Resources */,
-				D33279FA2510D80B00C9D206 /* Images.xcassets in Resources */,
-				D33279FF2510DC6100C9D206 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,14 +636,6 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		D3A57E6F24C0380000368EA1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3A57E7024C0380000368EA1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -741,11 +763,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CleanArch/CleanArch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "CleanArch/Supporting Files/CleanArch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRE923483J;
-				INFOPLIST_FILE = CleanArch/Info.plist;
+				INFOPLIST_FILE = "CleanArch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -763,11 +785,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CleanArch/CleanArch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "CleanArch/Supporting Files/CleanArch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LRE923483J;
-				INFOPLIST_FILE = CleanArch/Info.plist;
+				INFOPLIST_FILE = "CleanArch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

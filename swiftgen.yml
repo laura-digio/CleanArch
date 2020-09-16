@@ -7,8 +7,8 @@ strings:
       output: Strings.swift
 xcassets:
   inputs:
-    - Images.xcassets
-    - Colors.xcassets
+    - Images/Images.xcassets
+    - Colors/Colors.xcassets
   outputs:
     - templateName: swift5
       output: Assets.swift
