@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -22,27 +22,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Initialize Firebase in your app
         FirebaseApp.configure()
 
-        // For iOS 10 display notification (sent via APNS)
-        UNUserNotificationCenter.current().delegate = self
+        // Delegate to handle FCM token refreshes, and remote data messages received via FCM direct channel.
+        Messaging.messaging().delegate = NotificationManager.shared
 
-        // Register for remote notifications
-        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-        UNUserNotificationCenter.current().requestAuthorization(options: authOptions, completionHandler: {_, _ in })
-        application.registerForRemoteNotifications()
-
-        // Access the registration token
-        Messaging.messaging().delegate = self
+        // The object that processes incoming notifications and notification-related actions.
+        UNUserNotificationCenter.current().delegate = NotificationManager.shared
 
         return true
     }
 
     /**
-     * Monitor FCM registration token refresh
+     * Monitor APNs token refresh
      */
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        print("Firebase registration token: \(fcmToken)")
-
-        // Send token to server-side
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        debugPrint("Apple Push Notification service (APNs) device token: \(token)")
     }
 
     /**
@@ -76,13 +70,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         debugPrint(userInfo)
 
         completionHandler(UIBackgroundFetchResult.newData)
-    }
-
-    /**
-     * Monitor APNs token refresh
-     */
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
-        debugPrint("Apple Push Notification service (APNs) device token: \(token)")
     }
 }

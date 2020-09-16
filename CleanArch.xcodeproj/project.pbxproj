@@ -20,6 +20,7 @@
 		BB29FF06DCB0FE2F7ECB6963 /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20933CF5D783E2EBE45EB65 /* ListWireframe.swift */; };
 		D3089900250FA15400C1F151 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30898F4250FA15400C1F151 /* Repository.swift */; };
 		D308998B250FA9E700C1F151 /* NetworkClientConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308998A250FA9E700C1F151 /* NetworkClientConstants.swift */; };
+		D3295CF7251231B500255218 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3295CF6251231B500255218 /* NotificationManager.swift */; };
 		D33279EC2510D2A100C9D206 /* TabbedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33279EB2510D2A100C9D206 /* TabbedProtocol.swift */; };
 		D33279EE2510D5B000C9D206 /* ListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33279ED2510D5B000C9D206 /* ListNavigationController.swift */; };
 		D33279FB2510D80B00C9D206 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D33279F22510D80A00C9D206 /* Localizable.strings */; };
@@ -59,6 +60,7 @@
 		D20933CF5D783E2EBE45EB65 /* ListWireframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		D30898F4250FA15400C1F151 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		D308998A250FA9E700C1F151 /* NetworkClientConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientConstants.swift; sourceTree = "<group>"; };
+		D3295CF6251231B500255218 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		D33279EB2510D2A100C9D206 /* TabbedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedProtocol.swift; sourceTree = "<group>"; };
 		D33279ED2510D5B000C9D206 /* ListNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNavigationController.swift; sourceTree = "<group>"; };
 		D33279F52510D80A00C9D206 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				2749644BE3C37EBEBF1AA810 /* Modules */,
 				D3AA2F4D250FAECB00A51E9B /* WebServices */,
 				D3A57E6424C037FF00368EA1 /* AppDelegate.swift */,
+				D3295CF6251231B500255218 /* NotificationManager.swift */,
 				D3D4B6FA2512114A00F9B234 /* Supporting Files */,
 			);
 			path = CleanArch;
@@ -602,6 +605,7 @@
 				D33279EC2510D2A100C9D206 /* TabbedProtocol.swift in Sources */,
 				D308998B250FA9E700C1F151 /* NetworkClientConstants.swift in Sources */,
 				D3089900250FA15400C1F151 /* Repository.swift in Sources */,
+				D3295CF7251231B500255218 /* NotificationManager.swift in Sources */,
 				2C943111C8B3A0972B947CEF /* MainAssembly.swift in Sources */,
 				3789A6E59FB9505B2C9DEFF2 /* MainInteractor.swift in Sources */,
 				D3327A172511031A00C9D206 /* SettingsViewController.swift in Sources */,
