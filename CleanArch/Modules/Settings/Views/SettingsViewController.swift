@@ -25,12 +25,8 @@ class SettingsViewController: UIViewController {
 
         configureView()
         bindPresenter()
-    }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        NotificationManager.shared.registerForRemoteNotifications()
+        presenter.enablePushNotifications()
     }
 }
 

@@ -15,3 +15,9 @@ class SettingsInteractor {
         self.repository = repository
     }
 }
+
+extension SettingsInteractor {
+    func enablePushNotifications() {
+        repository.registerForRemoteNotifications()
+    }
+}

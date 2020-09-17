@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -23,12 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         // Delegate to handle FCM token refreshes, and remote data messages received via FCM direct channel.
-        Messaging.messaging().delegate = NotificationManager.shared
+        Messaging.messaging().delegate = self
 
         // The object that processes incoming notifications and notification-related actions.
-        UNUserNotificationCenter.current().delegate = NotificationManager.shared
+        UNUserNotificationCenter.current().delegate = self
 
         return true
+    }
+
+    /**
+     * Monitor FCM registration token refresh
+     */
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        Repository.sharedInstance.sendTokenToServer(fcmToken)
     }
 
     /**
@@ -48,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      * this callback will not be fired till the user taps on the notification launching the application.
      */
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-        debugPrint(userInfo)
+        Repository.sharedInstance.handleRemoteNotification(userInfo)
     }
 
     /**
@@ -67,8 +74,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didReceiveRemoteNotification userInfo: [AnyHashable: Any],
                      fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        debugPrint(userInfo)
-
-        completionHandler(UIBackgroundFetchResult.newData)
+        Repository.sharedInstance.handleRemoteNotification(userInfo, completionHandler: completionHandler)
     }
 }

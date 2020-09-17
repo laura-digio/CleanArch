@@ -22,3 +22,9 @@ class SettingsPresenter {
         return L10n.moduleSettingsNavTitle.localized()
     }
 }
+
+extension SettingsPresenter {
+    func enablePushNotifications() {
+        interactor.enablePushNotifications()
+    }
+}
