@@ -30,7 +30,7 @@ extension Repository {
 
     func handleRemoteNotification(_ userInfo: [AnyHashable: Any],
                                   completionHandler: ((UIBackgroundFetchResult) -> Void)? = nil) {
-        debugPrint(userInfo)
+        debugPrint("application didReceiveRemoteNotification: \(userInfo)")
 
         if let _completionHandler = completionHandler {
             _completionHandler(UIBackgroundFetchResult.newData)
