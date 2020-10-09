@@ -18,7 +18,7 @@
 
 By applying VIPER, we separate the files or classes into components that can change independently of other components. Each block corresponds to an object with specific tasks, inputs, and outputs.
 
-![Uncle Bob](doc/clean_architecture.png)
+![Uncle Bob](clean_architecture.png)
 
 ## View
 
@@ -122,7 +122,7 @@ This layer contains the **models** used by the **Interactor**.
 
 **Repository** is a **design pattern** that provides an abstraction of data. It allows us to abstract the domain layer from the data layer and also, inside data layer, the data repository from its data sources.
 
-![Repository](doc/repository.png)
+![Repository](repository.png)
 
 Since we need to query the model objects from different locations in the code over and over again, a repository provides a single-entry point to work with the models and remove duplicate query code.
 

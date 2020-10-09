@@ -18,7 +18,7 @@ They help you create loosely coupled code so that you can change or replace comp
 
 **Singleton** is a **creational design pattern** that ensures that only one instance exists for a given class and that there’s a global access point to that instance.
 
-It usually uses lazy loading to create the single instance when it’s needed the first time..
+It usually uses lazy loading to create the single instance when it’s needed the first time.
 
 ## Factory
 
