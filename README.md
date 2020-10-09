@@ -6,7 +6,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
 
 - [SOLID principles](/doc/solid_principles.md)
   * [Single responsibility](/doc/solid_principles#single-responsibility)
-  * [Open/closed](/doc/solid_principles.md#open/closed)
+  * [Open/closed](/doc/solid_principles.md#open-closed)
   * [Liskov substitution](/doc/solid_principles.md#liskov-substitution)
   * [Interface segregation](/doc/solid_principles.md#interface-segregation)
   * [Dependency inversion](/doc/solid_principles.md#dependency-inversion)
@@ -19,7 +19,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
   * [Presenter](/doc/viper.md#presenter)
   * [Entity](/doc/viper.md#entity)
     - [Repository](/doc/viper.md#repository)
-  * [Router / Wireframe](/doc/viper.md#router-/-wireframe)
+  * [Router / Wireframe](/doc/viper.md#router--wireframe)
   * [Assembly](/doc/viper.md#assembly)
     - [Dependency Injection](/doc/viper.md#dependency-injection)
   * [DataManager](/doc/viper.md#datamanager)
@@ -47,14 +47,14 @@ Clean architecture is the structure of layers for organizing our app so that it'
 
 ---
 
-- [Design patterns](/doc/design-patterns.md)
-  * [Singleton](/doc/design-patterns.md#singleton)
-  * [Factory](/doc/design-patterns.md#factory)
-  * [Abstract Factory](/doc/design-patterns.md#abstract-factory)
-  * [Builder](/doc/design-patterns.md#builder)
-  * [Iterator](/doc/design-patterns.md#iterator)
-  * [Observer](/doc/design-patterns.md#observer)
-  * [Repository](/doc/design-patterns.md#repository)
+- [Design patterns](/doc/design_patterns.md)
+  * [Singleton](/doc/design_patterns.md#singleton)
+  * [Factory](/doc/design_patterns.md#factory)
+  * [Abstract Factory](/doc/design_patterns.md#abstract-factory)
+  * [Builder](/doc/design_patterns.md#builder)
+  * [Iterator](/doc/design_patterns.md#iterator)
+  * [Observer](/doc/design_patterns.md#observer)
+  * [Repository](/doc/design_patterns.md#repository)
 
 ---
 
