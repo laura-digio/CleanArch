@@ -42,7 +42,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
 
 ---
 
-- [Communication between layers](/doc/communication.md)
+- [Data propagation](/doc/propagation.md)
 - [State management](/doc/state.md)
 
 ---
