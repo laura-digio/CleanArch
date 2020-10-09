@@ -5,7 +5,7 @@
 * [Presenter](#presenter)
 * [Entity](#entity)
   - [Repository](#repository)
-* [Router / Wireframe](#router-/-wireframe)
+* [Router / Wireframe](#router--wireframe)
 * [Assembly](#assembly)
   - [Dependency Injection](#dependency-injection)
 * [DataManager](#datamanager)

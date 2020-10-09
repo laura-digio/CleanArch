@@ -1,7 +1,7 @@
 # SOLID principles
 
 * [Single responsibility](#single-responsibility)
-* [Open/closed](#open/closed)
+* [Open/closed](#openclosed)
 * [Liskov substitution](#liskov-substitution)
 * [Interface segregation](#interface-segregation)
 * [Dependency inversion](#dependency-inversion)

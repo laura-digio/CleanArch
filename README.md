@@ -6,7 +6,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
 
 - [SOLID principles](/doc/solid_principles.md)
   * [Single responsibility](/doc/solid_principles#single-responsibility)
-  * [Open/closed](/doc/solid_principles.md#open-closed)
+  * [Open/closed](/doc/solid_principles.md#openclosed)
   * [Liskov substitution](/doc/solid_principles.md#liskov-substitution)
   * [Interface segregation](/doc/solid_principles.md#interface-segregation)
   * [Dependency inversion](/doc/solid_principles.md#dependency-inversion)
