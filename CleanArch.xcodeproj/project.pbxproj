@@ -30,11 +30,11 @@
 		D3327A14251102F700C9D206 /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A13251102F700C9D206 /* SettingsNavigationController.swift */; };
 		D3327A172511031A00C9D206 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A152511031A00C9D206 /* SettingsViewController.swift */; };
 		D3327A182511031A00C9D206 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3327A162511031A00C9D206 /* SettingsViewController.xib */; };
+		D351B1AB2536F8B100B32FAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D351B1AA2536F8B100B32FAB /* GoogleService-Info.plist */; };
 		D35B3174251354F500D76A99 /* Repository+Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35B3173251354F500D76A99 /* Repository+Push.swift */; };
 		D3A57E6524C037FF00368EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A57E6424C037FF00368EA1 /* AppDelegate.swift */; };
 		D3AA2F58250FAECB00A51E9B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */; };
 		D3D4B6F72512111A00F9B234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F22512111A00F9B234 /* Images.xcassets */; };
-		D3D4B6F82512111A00F9B234 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F42512111A00F9B234 /* GoogleService-Info.plist */; };
 		D3D4B6F92512111A00F9B234 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F62512111A00F9B234 /* Colors.xcassets */; };
 		D3D4B6FE2512114A00F9B234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */; };
 		D9A5AD5891186EF8D170DC4E /* libPods-CleanArch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCABC3267A1CEA26A40CF4E /* libPods-CleanArch.a */; };
@@ -71,13 +71,13 @@
 		D3327A13251102F700C9D206 /* SettingsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
 		D3327A152511031A00C9D206 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D3327A162511031A00C9D206 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		D351B1AA2536F8B100B32FAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D35B3173251354F500D76A99 /* Repository+Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Push.swift"; sourceTree = "<group>"; };
 		D3A57E6124C037FF00368EA1 /* CleanArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A57E6424C037FF00368EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		D3ABCA2C24E14EDE00AE8C8A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		D3D4B6F22512111A00F9B234 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D3D4B6F42512111A00F9B234 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3D4B6F62512111A00F9B234 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D4B6FC2512114A00F9B234 /* CleanArch.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CleanArch.entitlements; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 				D33279F12510D80A00C9D206 /* Localizables */,
 				D3D4B6F12512111A00F9B234 /* Images */,
 				D3D4B6F52512111A00F9B234 /* Colors */,
-				D3D4B6F32512111A00F9B234 /* Config */,
+				D351B1A42536F7D700B32FAB /* Config */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -298,6 +298,14 @@
 				D3327A0A2510F2CD00C9D206 /* String+Localized.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		D351B1A42536F7D700B32FAB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D351B1AA2536F8B100B32FAB /* GoogleService-Info.plist */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		D3A57E5824C037FF00368EA1 = {
@@ -348,14 +356,6 @@
 				D3D4B6F22512111A00F9B234 /* Images.xcassets */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		D3D4B6F32512111A00F9B234 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				D3D4B6F42512111A00F9B234 /* GoogleService-Info.plist */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		D3D4B6F52512111A00F9B234 /* Colors */ = {
@@ -505,11 +505,11 @@
 			files = (
 				D3D4B6F92512111A00F9B234 /* Colors.xcassets in Resources */,
 				D3D4B6FE2512114A00F9B234 /* LaunchScreen.storyboard in Resources */,
-				D3D4B6F82512111A00F9B234 /* GoogleService-Info.plist in Resources */,
 				D3D4B6F72512111A00F9B234 /* Images.xcassets in Resources */,
 				D3327A102510F87800C9D206 /* ListViewController.xib in Resources */,
 				D3327A182511031A00C9D206 /* SettingsViewController.xib in Resources */,
 				D33279FB2510D80B00C9D206 /* Localizable.strings in Resources */,
+				D351B1AB2536F8B100B32FAB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
