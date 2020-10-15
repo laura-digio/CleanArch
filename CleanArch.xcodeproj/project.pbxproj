@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,14 +26,14 @@
 		D3327A052510F19000C9D206 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A032510F19000C9D206 /* Strings.swift */; };
 		D3327A062510F19000C9D206 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A042510F19000C9D206 /* Assets.swift */; };
 		D3327A0C2510F2CD00C9D206 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A0A2510F2CD00C9D206 /* String+Localized.swift */; };
-		D3327A102510F87800C9D206 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3327A0E2510F87800C9D206 /* ListViewController.xib */; };
 		D3327A14251102F700C9D206 /* SettingsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A13251102F700C9D206 /* SettingsNavigationController.swift */; };
 		D3327A172511031A00C9D206 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3327A152511031A00C9D206 /* SettingsViewController.swift */; };
-		D3327A182511031A00C9D206 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3327A162511031A00C9D206 /* SettingsViewController.xib */; };
 		D351B1AB2536F8B100B32FAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D351B1AA2536F8B100B32FAB /* GoogleService-Info.plist */; };
 		D35B3174251354F500D76A99 /* Repository+Push.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35B3173251354F500D76A99 /* Repository+Push.swift */; };
+		D39ACF5425383B88008A70CF /* ListSnapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39ACF5325383B88008A70CF /* ListSnapView.swift */; };
 		D3A57E6524C037FF00368EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A57E6424C037FF00368EA1 /* AppDelegate.swift */; };
 		D3AA2F58250FAECB00A51E9B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */; };
+		D3C0784D253874730076250E /* SettingsSnapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0784C253874730076250E /* SettingsSnapView.swift */; };
 		D3D4B6F72512111A00F9B234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F22512111A00F9B234 /* Images.xcassets */; };
 		D3D4B6F92512111A00F9B234 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F62512111A00F9B234 /* Colors.xcassets */; };
 		D3D4B6FE2512114A00F9B234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */; };
@@ -67,16 +67,16 @@
 		D3327A032510F19000C9D206 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		D3327A042510F19000C9D206 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		D3327A0A2510F2CD00C9D206 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
-		D3327A0E2510F87800C9D206 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		D3327A13251102F700C9D206 /* SettingsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNavigationController.swift; sourceTree = "<group>"; };
 		D3327A152511031A00C9D206 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		D3327A162511031A00C9D206 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		D351B1AA2536F8B100B32FAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D35B3173251354F500D76A99 /* Repository+Push.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Push.swift"; sourceTree = "<group>"; };
+		D39ACF5325383B88008A70CF /* ListSnapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSnapView.swift; sourceTree = "<group>"; };
 		D3A57E6124C037FF00368EA1 /* CleanArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A57E6424C037FF00368EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3AA2F4E250FAECB00A51E9B /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		D3ABCA2C24E14EDE00AE8C8A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		D3C0784C253874730076250E /* SettingsSnapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSnapView.swift; sourceTree = "<group>"; };
 		D3D4B6F22512111A00F9B234 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3D4B6F62512111A00F9B234 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -381,7 +381,7 @@
 			children = (
 				D3327A13251102F700C9D206 /* SettingsNavigationController.swift */,
 				D3327A152511031A00C9D206 /* SettingsViewController.swift */,
-				D3327A162511031A00C9D206 /* SettingsViewController.xib */,
+				D3C0784C253874730076250E /* SettingsSnapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 			children = (
 				D33279ED2510D5B000C9D206 /* ListNavigationController.swift */,
 				C1C90C2D9AB17DD2532B6D35 /* ListViewController.swift */,
-				D3327A0E2510F87800C9D206 /* ListViewController.xib */,
+				D39ACF5325383B88008A70CF /* ListSnapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -473,6 +473,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = DIGIO;
 				TargetAttributes = {
 					D3A57E6024C037FF00368EA1 = {
 						CreatedOnToolsVersion = 12.0;
@@ -480,7 +481,7 @@
 				};
 			};
 			buildConfigurationList = D3A57E5C24C037FF00368EA1 /* Build configuration list for PBXProject "CleanArch" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -506,8 +507,6 @@
 				D3D4B6F92512111A00F9B234 /* Colors.xcassets in Resources */,
 				D3D4B6FE2512114A00F9B234 /* LaunchScreen.storyboard in Resources */,
 				D3D4B6F72512111A00F9B234 /* Images.xcassets in Resources */,
-				D3327A102510F87800C9D206 /* ListViewController.xib in Resources */,
-				D3327A182511031A00C9D206 /* SettingsViewController.xib in Resources */,
 				D33279FB2510D80B00C9D206 /* Localizable.strings in Resources */,
 				D351B1AB2536F8B100B32FAB /* GoogleService-Info.plist in Resources */,
 			);
@@ -599,6 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39ACF5425383B88008A70CF /* ListSnapView.swift in Sources */,
 				D3AA2F58250FAECB00A51E9B /* NetworkClient.swift in Sources */,
 				D3A57E6524C037FF00368EA1 /* AppDelegate.swift in Sources */,
 				D3327A14251102F700C9D206 /* SettingsNavigationController.swift in Sources */,
@@ -609,6 +609,7 @@
 				3789A6E59FB9505B2C9DEFF2 /* MainInteractor.swift in Sources */,
 				D3327A172511031A00C9D206 /* SettingsViewController.swift in Sources */,
 				D33279EE2510D5B000C9D206 /* ListNavigationController.swift in Sources */,
+				D3C0784D253874730076250E /* SettingsSnapView.swift in Sources */,
 				D3327A062510F19000C9D206 /* Assets.swift in Sources */,
 				FEC282C61EDE0898AD261C71 /* MainWireframe.swift in Sources */,
 				87CC1C83D9346D321BC6D595 /* MainPresenter.swift in Sources */,

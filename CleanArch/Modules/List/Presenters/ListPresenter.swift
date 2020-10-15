@@ -17,12 +17,4 @@ class ListPresenter {
         self.interactor = interactor
         self.wireframe = wireframe
     }
-
-    var navigationTitle: String {
-        return L10n.moduleListNavTitle.localized()
-    }
-
-    var mainLabelText: String {
-        return L10n.helloWorld.localized()
-    }
 }

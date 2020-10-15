@@ -18,7 +18,7 @@ target 'CleanArch' do
   pod 'Alamofire', '~> 4.9.1'
   pod 'AlamofireObjectMapper', '~> 5.2.1'
   pod 'Kingfisher'
-  pod 'lottie-ios'
+  pod 'SnapKit'
   pod 'Firebase/Messaging'
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'

@@ -17,10 +17,6 @@ class SettingsPresenter {
         self.interactor = interactor
         self.wireframe = wireframe
     }
-
-    var navigationTitle: String {
-        return L10n.moduleSettingsNavTitle.localized()
-    }
 }
 
 extension SettingsPresenter {
