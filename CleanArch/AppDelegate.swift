@@ -11,14 +11,19 @@ import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
+
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = MainWireframe().mainViewController()
-        self.window?.makeKeyAndVisible()
+        if #available(iOS 13.0, *) {
+            // See SceneDelegate
+        } else {
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.rootViewController = MainWireframe().mainViewController()
+            window?.makeKeyAndVisible()
+        }
 
         // Initialize Firebase in your app
         FirebaseApp.configure()
