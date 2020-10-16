@@ -5,7 +5,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
 ---
 
 - [Three-tier architecture](/doc/three-tier.md)
-  * [Presentation](/doc/three-tier#presentation)
+  * [Presentation](/doc/three-tier.md#presentation)
   * [Domain](/doc/three-tier.md#domain)
   * [Data](/doc/three-tier.md#data)
 
