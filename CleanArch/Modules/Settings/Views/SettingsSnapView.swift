@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 final class SettingsSnapView: UIView {
-    private lazy var table = UITableView()
+    private lazy var tableView = UITableView()
 
     // Initialized from code
     override init(frame: CGRect) {
@@ -27,6 +27,11 @@ final class SettingsSnapView: UIView {
 
 extension SettingsSnapView {
     private func setupView() {
-        backgroundColor = .red
+        backgroundColor = .white
+
+        addSubview(tableView)
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(0)
+        }
     }
 }

@@ -10,15 +10,7 @@ import UIKit
 import SnapKit
 
 final class ListSnapView: UIView {
-
-    private lazy var table = UITableView()
-
-    /*let topView: UIView = {
-        let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-        view.backgroundColor = UIColor.redColor()
-        return view
-    }()*/
+    private lazy var tableView = UITableView()
 
     // Initialized from code
     override init(frame: CGRect) {
@@ -36,5 +28,10 @@ final class ListSnapView: UIView {
 extension ListSnapView {
     private func setupView() {
         backgroundColor = .white
+
+        addSubview(tableView)
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(0)
+        }
     }
 }

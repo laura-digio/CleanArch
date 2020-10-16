@@ -37,6 +37,7 @@
 		D3D4B6F72512111A00F9B234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F22512111A00F9B234 /* Images.xcassets */; };
 		D3D4B6F92512111A00F9B234 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6F62512111A00F9B234 /* Colors.xcassets */; };
 		D3D4B6FE2512114A00F9B234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */; };
+		D3FFEA2D2539971300790BFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FFEA2C2539971300790BFB /* SceneDelegate.swift */; };
 		D9A5AD5891186EF8D170DC4E /* libPods-CleanArch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCABC3267A1CEA26A40CF4E /* libPods-CleanArch.a */; };
 		E00B95D7A4878B6D1B371675 /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3728B116853BD5159D140 /* ListAssembly.swift */; };
 		FEC282C61EDE0898AD261C71 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBBC2EE2971679B8A5BC272 /* MainWireframe.swift */; };
@@ -82,6 +83,7 @@
 		D3D4B6FB2512114A00F9B234 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3D4B6FC2512114A00F9B234 /* CleanArch.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CleanArch.entitlements; sourceTree = "<group>"; };
 		D3D4B6FD2512114A00F9B234 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3FFEA2C2539971300790BFB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F539E15C728BF5CCF26B2AF6 /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		F641347FF224C9835A1FC854 /* Pods-CleanArch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArch.debug.xcconfig"; path = "Target Support Files/Pods-CleanArch/Pods-CleanArch.debug.xcconfig"; sourceTree = "<group>"; };
 		F886F39FCAADC614939EAE09 /* ListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 				2749644BE3C37EBEBF1AA810 /* Modules */,
 				D3AA2F4D250FAECB00A51E9B /* WebServices */,
 				D3A57E6424C037FF00368EA1 /* AppDelegate.swift */,
+				D3FFEA2C2539971300790BFB /* SceneDelegate.swift */,
 				D3D4B6FA2512114A00F9B234 /* Supporting Files */,
 			);
 			path = CleanArch;
@@ -610,6 +613,7 @@
 				D3327A172511031A00C9D206 /* SettingsViewController.swift in Sources */,
 				D33279EE2510D5B000C9D206 /* ListNavigationController.swift in Sources */,
 				D3C0784D253874730076250E /* SettingsSnapView.swift in Sources */,
+				D3FFEA2D2539971300790BFB /* SceneDelegate.swift in Sources */,
 				D3327A062510F19000C9D206 /* Assets.swift in Sources */,
 				FEC282C61EDE0898AD261C71 /* MainWireframe.swift in Sources */,
 				87CC1C83D9346D321BC6D595 /* MainPresenter.swift in Sources */,

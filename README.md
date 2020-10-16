@@ -4,6 +4,13 @@ Clean architecture is the structure of layers for organizing our app so that it'
 
 ---
 
+- [Three-tier architecture](/doc/three-tier.md)
+  * [Presentation](/doc/three-tier#presentation)
+  * [Domain](/doc/three-tier.md#domain)
+  * [Data](/doc/three-tier.md#data)
+
+---
+
 - [SOLID principles](/doc/solid_principles.md)
   * [Single responsibility](/doc/solid_principles#single-responsibility)
   * [Open/closed](/doc/solid_principles.md#openclosed)
@@ -43,6 +50,13 @@ Clean architecture is the structure of layers for organizing our app so that it'
 ---
 
 - [Data propagation](/doc/propagation.md)
+  * [Data Flow](/doc/propagation.md#data-flow)
+  * [Dependency Rule](/doc/propagation.md#dependency-rule)
+    - [Presentation Layer](/doc/propagation.md#presentation-layer)
+    - [Domain Layer](/doc/propagation.md#domain-layer)
+      * [Repository Interface](/doc/propagation.md#repository-interface)
+    - [Data Layer](/doc/propagation.md#data-layer)
+      * [Repository Implementation](/doc/propagation.md#repository-implementation)
 - [State management](/doc/state.md)
 
 ---
