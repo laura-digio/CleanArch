@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class SettingsPresenter {
+
     private let interactor: SettingsInteractor
     private let wireframe: SettingsWireframe
 
@@ -20,6 +21,7 @@ class SettingsPresenter {
 }
 
 extension SettingsPresenter {
+
     func enablePushNotifications() {
         interactor.enablePushNotifications()
     }

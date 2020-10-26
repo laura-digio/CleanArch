@@ -9,7 +9,9 @@
 import UIKit
 import SnapKit
 
+// MARK: - Lifecycle
 final class SettingsSnapView: UIView {
+
     private lazy var tableView = UITableView()
 
     // Initialized from code
@@ -25,7 +27,9 @@ final class SettingsSnapView: UIView {
     }
 }
 
+// MARK: - Setup
 extension SettingsSnapView {
+
     private func setupView() {
         backgroundColor = .white
 

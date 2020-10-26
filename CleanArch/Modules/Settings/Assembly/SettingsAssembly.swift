@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class SettingsAssembly {
+
     private let repository = Repository.sharedInstance
 
     func viewSettingsModuleWithWireframe(_ wireframe: SettingsWireframe) -> UIViewController & TabbedProtocol {

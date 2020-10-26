@@ -20,18 +20,24 @@ extension Repository {
                     UIApplication.shared.registerForRemoteNotifications()
                 }
             } else {
+                #if DEBUG
                 debugPrint(error as Any)
+                #endif
             }
         }
     }
 
     func sendTokenToServer(_ token: String) {
+        #if DEBUG
         debugPrint("Firebase registration token: \(token)")
+        #endif
     }
 
     func handleRemoteNotification(_ userInfo: [AnyHashable: Any],
                                   completionHandler: ((UIBackgroundFetchResult) -> Void)? = nil) {
+        #if DEBUG
         debugPrint("application didReceiveRemoteNotification: \(userInfo)")
+        #endif
 
         if let _completionHandler = completionHandler {
             _completionHandler(UIBackgroundFetchResult.newData)

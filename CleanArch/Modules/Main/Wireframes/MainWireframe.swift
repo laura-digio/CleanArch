@@ -9,6 +9,7 @@
 import Foundation
 
 class MainWireframe {
+
 	private let assembly = MainAssembly()
 
     func mainViewController(tabSelectedIndex: Int? = nil) -> MainViewController {

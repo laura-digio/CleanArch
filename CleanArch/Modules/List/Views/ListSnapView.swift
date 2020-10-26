@@ -9,8 +9,10 @@
 import UIKit
 import SnapKit
 
+// MARK: - Lifecycle
 final class ListSnapView: UIView {
-    private lazy var tableView = UITableView()
+
+    lazy var tableView = UITableView()
 
     // Initialized from code
     override init(frame: CGRect) {
@@ -25,7 +27,9 @@ final class ListSnapView: UIView {
     }
 }
 
+// MARK: - Setup
 extension ListSnapView {
+
     private func setupView() {
         backgroundColor = .white
 
@@ -33,5 +37,10 @@ extension ListSnapView {
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(0)
         }
+
+        tableView.separatorStyle = .none
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44
+        tableView.register(cellType: ListCell.self)
     }
 }

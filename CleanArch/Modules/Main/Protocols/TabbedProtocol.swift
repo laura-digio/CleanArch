@@ -9,6 +9,7 @@
 import UIKit
 
 protocol TabbedProtocol {
+
     func tabImage() -> UIImage?
     func tabSelectedImage() -> UIImage?
     func tabTitle() -> String?

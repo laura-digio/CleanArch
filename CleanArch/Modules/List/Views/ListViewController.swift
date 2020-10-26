@@ -8,9 +8,13 @@
 
 import Foundation
 import UIKit
+import RxSwift
 
+// MARK: - Lifecycle
 final class ListViewController: UIViewController {
+
     private let presenter: ListPresenter
+    private let bag = DisposeBag()
 
     // Use "snapView" instead of "view"
     var snapView: ListSnapView {
@@ -35,15 +39,40 @@ final class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        configureNav()
+        configureView()
         bindPresenter()
+
+        presenter.requestData()
     }
 }
 
+// MARK: - Setup
 extension ListViewController {
-    private func configureNav() {
+
+    private func configureView() {
         navigationItem.title = L10n.moduleListNavTitle.localized()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: Asset.Images.iconSettings.image,
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(rightButtonPressed(_:)))
     }
 
-    private func bindPresenter() {}
+    private func bindPresenter() {
+        snapView.tableView.dataSource = presenter.dataManager
+        snapView.tableView.delegate = presenter.dataManager
+
+        presenter.refreshData
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                self?.snapView.tableView.reloadData()
+            }).disposed(by: bag)
+    }
+}
+
+// MARK: - User Interaction
+extension ListViewController {
+    
+    @objc private func rightButtonPressed(_ sender: UIBarButtonItem) {
+        presenter.showSettingsViewControllerWithContext(navigationController)
+    }
 }

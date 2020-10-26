@@ -9,6 +9,7 @@
 import Foundation
 
 class MainPresenter {
+
     private let interactor: MainInteractor
     private let wireframe: MainWireframe
 

@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
+// MARK: - Lifecycle
 class SettingsViewController: UIViewController {
+
     private let presenter: SettingsPresenter
 
     // Use "snapView" instead of "view"
@@ -35,17 +37,22 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        configureNav()
+        configureView()
         bindPresenter()
 
         presenter.enablePushNotifications()
     }
 }
 
+// MARK: - Setup
 extension SettingsViewController {
-    private func configureNav() {
+
+    private func configureView() {
         navigationItem.title = L10n.moduleSettingsNavTitle.localized()
     }
 
     private func bindPresenter() {}
 }
+
+// MARK: - User Interaction
+extension SettingsViewController {}

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class SettingsNavigationController: UINavigationController, TabbedProtocol {
+class SettingsNavigationController: BaseNavigationController, TabbedProtocol {
+
     func tabImage() -> UIImage? {
         return Asset.Images.tabPlay.image
     }

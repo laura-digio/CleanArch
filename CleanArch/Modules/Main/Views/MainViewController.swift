@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class MainViewController: UITabBarController {
+
     private let presenter: MainPresenter
 
     init(viewControllers: [UIViewController & TabbedProtocol], presenter: MainPresenter) {
@@ -31,6 +32,7 @@ class MainViewController: UITabBarController {
 }
 
 extension MainViewController {
+
     private func configureTabs() {
         if let viewControllers: [UIViewController & TabbedProtocol] = self.viewControllers as? [UIViewController & TabbedProtocol] {
             for (index, viewController) in viewControllers.enumerated() {

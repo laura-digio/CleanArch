@@ -11,6 +11,7 @@ import Alamofire
 import RxSwift
 
 class Repository {
+
     static let sharedInstance = Repository()
     private let networkClient: NetworkClient = NetworkClient.sharedInstance
 

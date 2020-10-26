@@ -59,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
 
 // MARK: - MessagingDelegate
 extension AppDelegate {
+
     /**
      * Monitor FCM registration token refresh
      */
@@ -69,12 +70,15 @@ extension AppDelegate {
 
 // MARK: - UIApplicationDelegate - Remote Notifications
 extension AppDelegate {
+
     /**
      * Monitor APNs token refresh
      */
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        #if DEBUG
         let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
         debugPrint("Apple Push Notification service (APNs) device token: \(token)")
+        #endif
     }
 
     /**
@@ -94,6 +98,7 @@ extension AppDelegate {
 
 // MARK: - UNUserNotificationCenterDelegate
 extension AppDelegate {
+
     /**
      * User visible notifications
      * Asks the delegate how to handle a notification that arrived while the app was running in the foreground.
@@ -101,7 +106,10 @@ extension AppDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 willPresent notification: UNNotification,
                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        #if DEBUG
         debugPrint("userNotificationCenter willPresent notification: \(notification)")
+        #endif
+
         completionHandler([.alert, .sound, .badge])
     }
 
@@ -113,7 +121,10 @@ extension AppDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 didReceive response: UNNotificationResponse,
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
+        #if DEBUG
         debugPrint("userNotificationCenter didReceive response: \(response)")
+        #endif
+
         completionHandler()
     }
 }

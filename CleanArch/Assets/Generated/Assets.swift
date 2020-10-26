@@ -25,6 +25,7 @@ internal enum Asset {
     internal static let white = ColorAsset(name: "White")
   }
   internal enum Images {
+    internal static let iconSettings = ImageAsset(name: "icon_settings")
     internal static let tabList = ImageAsset(name: "tab_list")
     internal static let tabListSelected = ImageAsset(name: "tab_list_selected")
     internal static let tabPlay = ImageAsset(name: "tab_play")

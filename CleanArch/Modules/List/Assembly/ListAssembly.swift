@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class ListAssembly {
+
     private let repository = Repository.sharedInstance
 
     func viewListModuleWithWireframe(_ wireframe: ListWireframe) -> UIViewController & TabbedProtocol {

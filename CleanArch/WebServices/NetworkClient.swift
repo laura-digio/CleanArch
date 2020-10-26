@@ -33,7 +33,9 @@ class NetworkClient: SessionManager {
                     }
                 })
 
+            #if DEBUG
             debugPrint(myRequest as Any)
+            #endif
 
             return Disposables.create {
                 myRequest?.cancel()

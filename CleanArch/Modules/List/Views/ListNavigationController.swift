@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ListNavigationController: UINavigationController, TabbedProtocol {
+class ListNavigationController: BaseNavigationController, TabbedProtocol {
+
     func tabImage() -> UIImage? {
         return Asset.Images.tabList.image
     }

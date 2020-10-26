@@ -9,6 +9,7 @@
 import Foundation
 
 class MainInteractor {
+
     private let repository: Repository
 
     init(repository: Repository) {

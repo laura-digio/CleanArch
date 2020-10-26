@@ -9,6 +9,7 @@
 import Foundation
 
 class SettingsInteractor {
+
     private let repository: Repository
 
     init(repository: Repository) {
@@ -17,6 +18,7 @@ class SettingsInteractor {
 }
 
 extension SettingsInteractor {
+
     func enablePushNotifications() {
         repository.registerForRemoteNotifications()
     }

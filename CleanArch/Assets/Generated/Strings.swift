@@ -10,8 +10,6 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Hello, world!
-  internal static let helloWorld = L10n.tr("Localizable", "hello_world")
   /// List demo
   internal static let moduleListNavTitle = L10n.tr("Localizable", "module_list_nav_title")
   /// List
