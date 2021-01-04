@@ -7,11 +7,10 @@
 //
 
 import Alamofire
-import AlamofireObjectMapper
 import ObjectMapper
 import RxSwift
 
-class NetworkClient: SessionManager {
+class NetworkClient: Session {
     static let sharedInstance = NetworkClient()
 
     init() {

@@ -8,5 +8,5 @@
 
 class NetworkClientConstants {
     static let timeout = 60
-    static let baseURL = "http://api/v1"
+    static let baseURL = "https://api.github.com"
 }

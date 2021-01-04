@@ -1,9 +1,9 @@
 //
 //  String+Localized.swift
-//  EAE
+//  CleanArch
 //
-//  Created by Tony Martínez on 6/17/19
-//  Copyright (c) 2019 DIGIO. All rights reserved.
+//  Created by Laura on 14/09/2020.
+//  Copyright © 2020 DIGIO. All rights reserved.
 //
 
 import Foundation

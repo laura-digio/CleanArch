@@ -15,7 +15,7 @@ enum ListInteractorState {
 }
 
 class ListInteractor {
-z
+
     private let repository: Repository
     private let bag = DisposeBag()
 
