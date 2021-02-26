@@ -27,14 +27,6 @@ struct CustomView {
 
 extension CustomView {
 
-    struct FullLoadingView: View {
-        var body: some View {
-            VStack {
-                //ProgressView()
-            }
-        }
-    }
-
     struct LoaderView: View {
         let loading: Bool
 
@@ -122,7 +114,7 @@ extension CustomView {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 20, height: 20)
-                        .background(Color.gray)
+                        .background(Color.black)
                     Text(text)
                     Spacer()
                 }
@@ -143,7 +135,7 @@ extension CustomView {
                     .padding(3)
                     .background(disabled ? .black : Color(Assets.Colors.Badge.rawValue))
                     .foregroundColor(disabled ? Color(Assets.Colors.TextDisabled.rawValue) : .white)
-                    .clipShape(Circle()/*Capsule()*/)
+                    .clipShape(Circle())
             }
         }
     }
