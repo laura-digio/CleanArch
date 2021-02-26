@@ -14,8 +14,6 @@
 
 The data flow is the **communication** between **layers**.
 
-![RxSwift](rxswift.png)
-
 1. UI (ViewController) calls method from Presenter.
 2. Presenter executes a use case (interactor) that returns an Observable.
 3. This Observable is created on data layer and passed by domain layer.

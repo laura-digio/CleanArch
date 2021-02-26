@@ -1,0 +1,78 @@
+/* 
+  Localizable.strings
+*/
+
+// PLEASE SORT ALPHABETICALLY!
+
+"access" = "Access";
+
+"downloads" = "Downloads";
+
+"email" = "Email";
+"enter_data" = "Enter your data";
+"error_generic" = "An error occurred";
+"error_login" = "Unable to log in.\nPlease try again.";
+"error_pagination" = "No more items";
+"error_password" = "Wrong email or password";
+"error_player_asset" = "Episode unavailable";
+"error_player_asset_body" = "Cannot play the episode";
+"error_player_connection" = "Cannot listen to the episode";
+"error_player_connection_body" = "No Internet connection available";
+"error_player_route" = "Cannot find headphones or speaker";
+"error_sso" = "iVoox did not authorize the Single Sign-On token";
+
+"history" = "History";
+
+"know_more" = "Know more";
+
+"lists" = "Lists";
+"lists_today" = "Daily Mix";
+"lists_favorites" = "Favorites";
+"lists_listen_later" = "Listen later";
+
+"new_episodes" = "New episodes";
+"next_play_queue" = "Next";
+"now_playing" = "Now playing";
+"now_playing_queue" = "Now";
+
+"ok" = "Ok";
+
+"password" = "Password";
+"placeholder_favorites" = "No favorite episode yet";
+"placeholder_favorites_body" = "When you add favorite episodes, they will appear here";
+"placeholder_listen_later" = "No episodes for later listening";
+"placeholder_listen_later_body" = "When you add them, they will appear here";
+"placeholder_new_episodes" = "No new episodes yet";
+"placeholder_new_episodes_body" = "When available, they will appear here";
+"placeholder_play_queue" = "No episodes\nin play queue";
+"placeholder_play_queue_body" = "When available, they will appear here";
+"placeholder_playlist_episodes" = "This playlist does not yet contain any episodes";
+"placeholder_playlist_episodes_body" = "When you add episodes to the playlist, they will appear here";
+"placeholder_playlists" = "No playlists";
+"placeholder_playlists_body" = "When you have one, it will appear here";
+"placeholder_today" = "We are looking for the episodes that best suit you";
+"placeholder_today_body" = "Keep listening to help us get to know your preferences";
+"player_empty" = "Nothing playing yet";
+"player_empty_subtitle" = "Listen to the best podcasts in Your Content or Explore";
+"play_queue" = "Play queue";
+"play_rate" = "Speed";
+"premium_advantage_no_ads" = "No ads";
+"premium_advantage_sync" = "Sync your devices";
+"premium_advantage_vol" = "Boost the volume";
+"premium_box_body" = "Enjoy iVoox in your Apple Watch, and other Premium advantages in the app";
+"premium_box_button" = "%@ Free days";
+"premium_box_price" = "Then %@ €/month";
+"premium_box_title" = "Be Premium";
+"premium_header" = "iVoox Watch is only available for Premium or Plus users";
+"premium_try" = "Try it free";
+
+"settings" = "Settings";
+"sign_in_apple" = "Sign in";
+"sign_out" = "Sign out";
+"subscriptions" = "Subscriptions";
+"syncing" = "Syncing with iPhone";
+
+"terms" = "Terms";
+"today" = "Today";
+
+"voice_boost" = "Voice boost";

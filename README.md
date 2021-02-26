@@ -29,23 +29,6 @@ Clean architecture is the structure of layers for organizing our app so that it'
   * [Router / Wireframe](/doc/viper.md#router--wireframe)
   * [Assembly](/doc/viper.md#assembly)
     - [Dependency Injection](/doc/viper.md#dependency-injection)
-  * [DataManager](/doc/viper.md#datamanager)
-
----
-
-- [RxSwift](/doc/rxswift.md)
-  * [Stream](/doc/rxswift.md#stream)
-  * [Sequence](/doc/rxswift.md#sequence)
-  * [Observable](/doc/rxswift.md#observable)
-    - [Observable Life Cycle](/doc/rxswift.md#observable-life-cycle)
-    - [Creating Observable](/doc/rxswift.md#creating-observable)
-  * [Observer](/doc/rxswift.md#observer)
-  * [Subscription](/doc/rxswift.md#subscription)
-  * [Subject](/doc/rxswift.md#subject)
-    - [Publish Subject](/doc/rxswift.md#publish-subject)
-    - [Behaviour Subject](/doc/rxswift.md#behaviour-subject)
-    - [Replay Subject](/doc/rxswift.md#replay-subject)
-  * [Dispose bag](/doc/rxswift.md#dispose-bag)
 
 ---
 
