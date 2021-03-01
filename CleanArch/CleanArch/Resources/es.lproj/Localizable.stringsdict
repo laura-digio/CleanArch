@@ -2,59 +2,59 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>audio days count</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@audio_days_count@</string>
-        <key>audio_days_count</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>u</string>
-            <key>zero</key>
-            <string></string>
-            <key>one</key>
-            <string>1d</string>
-            <key>other</key>
-            <string>%ud</string>
-        </dict>
-    </dict>
-    <key>audio months count</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@audio_months_count@</string>
-        <key>audio_months_count</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>u</string>
-            <key>zero</key>
-            <string></string>
-            <key>one</key>
-            <string>1m</string>
-            <key>other</key>
-            <string>%um</string>
-        </dict>
-    </dict>
-    <key>audio years count</key>
-    <dict>
-        <key>NSStringLocalizedFormatKey</key>
-        <string>%#@audio_years_count@</string>
-        <key>audio_years_count</key>
-        <dict>
-            <key>NSStringFormatSpecTypeKey</key>
-            <string>NSStringPluralRuleType</string>
-            <key>NSStringFormatValueTypeKey</key>
-            <string>u</string>
-            <key>zero</key>
-            <string></string>
-            <key>one</key>
-            <string>1a</string>
-            <key>other</key>
-            <string>+1a</string>
-        </dict>
-    </dict>
+	<key>days count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days_count@</string>
+		<key>days_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string></string>
+			<key>one</key>
+			<string>1d</string>
+			<key>other</key>
+			<string>%ud</string>
+		</dict>
+	</dict>
+	<key>months count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@months_count@</string>
+		<key>months_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string></string>
+			<key>one</key>
+			<string>1m</string>
+			<key>other</key>
+			<string>%um</string>
+		</dict>
+	</dict>
+	<key>years count</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@years_count@</string>
+		<key>years_count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string></string>
+			<key>one</key>
+			<string>1a</string>
+			<key>other</key>
+			<string>+1a</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

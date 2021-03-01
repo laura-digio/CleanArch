@@ -18,15 +18,15 @@ extension Date {
         guard let years = Calendar.current.dateComponents([.year], from: dateUpload, to: Date()).year else { return output }
 
         if years > 0 {
-            let formatString = NSLocalizedString("audio years count", comment: "")
+            let formatString = NSLocalizedString("years count", comment: "")
             output = String.localizedStringWithFormat(formatString, years)
         }
         else if months > 0 {
-            let formatString = NSLocalizedString("audio months count", comment: "")
+            let formatString = NSLocalizedString("months count", comment: "")
             output = String.localizedStringWithFormat(formatString, months)
         }
         else if days > 0 {
-            let formatString = NSLocalizedString("audio days count", comment: "")
+            let formatString = NSLocalizedString("days count", comment: "")
             output = String.localizedStringWithFormat(formatString, days)
         }
         else {

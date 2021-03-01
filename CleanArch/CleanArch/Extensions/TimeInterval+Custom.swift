@@ -8,12 +8,12 @@
 import Foundation
 
 extension TimeInterval {
-    var playerTime: String? {
+    var customTime: String? {
         if self >= 3600 {
-            return Formatter.playerLong.string(from: self)
+            return Formatter.Long.string(from: self)
         }
         else {
-            return Formatter.playerShort.string(from: self)
+            return Formatter.Short.string(from: self)
         }
     }
 }

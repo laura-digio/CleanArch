@@ -29,8 +29,6 @@ public class Repository {
 extension Repository {
 
     func reset() {
-        user = nil
-
         do {
             try databaseClient.realm?.write({
                 databaseClient.realm?.deleteAll()
@@ -42,38 +40,46 @@ extension Repository {
             #endif
         }
     }
+}
 
-    func parseAudios<T: Model>(model: T.Type,
-                               result: Result<Response, MoyaError>,
-                               keyPath: String? = nil,
-                               shouldRefresh: Bool = true,
-                               callback: @escaping (UInt) -> Void) {
+// MARK: - Generic parsers
+
+protocol Model: Object {
+    var remoteSorting: Int { get set }
+    var id: Int { get set }
+}
+
+extension Repository {
+
+    func parseItems<T: Model>(model: T.Type,
+                              result: Result<Response, MoyaError>,
+                              keyPath: String? = nil,
+                              shouldRefresh: Bool = true,
+                              callback: @escaping (UInt) -> Void) {
         switch result {
         case let .success(response):
             do {
-                var audios: [Audio]?
+                var items: [ListItem]?
                 if let keyPath = keyPath {
                     if let json = (try response.mapJSON(failsOnEmptyData: false) as? NSDictionary)?.value(forKeyPath: keyPath) {
-                        audios = Mapper<Audio>().mapArray(JSONObject: json)
+                        items = Mapper<ListItem>().mapArray(JSONObject: json)
                     }
                 }
                 else {
                     let json = try response.mapJSON(failsOnEmptyData: false)
-                    audios = Mapper<Audio>().mapArray(JSONObject: json)
+                    items = Mapper<ListItem>().mapArray(JSONObject: json)
                 }
 
-                if let audios = audios {
+                if let items = items {
                     try databaseClient.realm?.write({
-                        var parsedItems: [String] = []
+                        var parsedItems: [Int] = []
                         var count = shouldRefresh ? 1 : (databaseClient.realm?.objects(T.self).count ?? 0) + 1
-                        audios.forEach { audio in
-                            let newItem = model.init()
-                            newItem.remoteSorting = count
-                            newItem.id = audio.id
-                            newItem.audio = audio
-                            databaseClient.realm?.add(newItem, update: .all)
-                            parsedItems.append(newItem.id)
-                            count += 1
+                        items.forEach { item in
+                            if let newItem = databaseClient.realm?.create(T.self, value: item, update: .all) {
+                                newItem.remoteSorting = count
+                                parsedItems.append(newItem.id)
+                                count += 1
+                            }
                         }
                         
                         // Sync local with remote
@@ -83,7 +89,7 @@ extension Repository {
                             }
                         }
 
-                        callback(UInt(audios.count))
+                        callback(UInt(items.count))
                     })
                 }
                 else {
@@ -100,12 +106,4 @@ extension Repository {
             callback(0)
         }
     }
-}
-
-// MARK: - Protocols
-
-protocol Model: Object {
-    var remoteSorting: Int { get set }
-    var id: String { get set }
-    var audio: Audio? { get set }
 }

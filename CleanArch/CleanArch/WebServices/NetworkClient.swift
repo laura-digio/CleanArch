@@ -11,19 +11,14 @@ import Alamofire
 
 struct NetworkClient {
     #if DEBUG
-    let provider = MoyaProvider<IvooxAPI>(session: DefaultAlamofireManager.sharedManager,
+    let provider = MoyaProvider<GitHubAPI>(session: DefaultAlamofireManager.sharedManager,
                                           plugins: [NetworkLoggerPlugin(configuration: .init(logOptions: .requestMethod))])
     #else
-    let provider = MoyaProvider<IvooxAPI>(session: DefaultAlamofireManager.sharedManager)
+    let provider = MoyaProvider<GitHubAPI>(session: DefaultAlamofireManager.sharedManager)
     #endif
 
-    var cRequestNewEpisodes: Cancellable?
-    var cRequestSubscriptions: Cancellable?
-    var cRequestTodayListAudios: Cancellable?
-    var cRequestLikedAudios: Cancellable?
-    var cRequestPendingAudios: Cancellable?
-    var cRequestPlaylists: Cancellable?
-    var cRequestPlaylistEpisodes: Cancellable?
+    var cRequestListItems: Cancellable?
+    var cRequestItemDetails: Cancellable?
 }
 
 class DefaultAlamofireManager: Alamofire.Session {

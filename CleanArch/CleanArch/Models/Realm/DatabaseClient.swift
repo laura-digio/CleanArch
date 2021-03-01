@@ -23,7 +23,6 @@ struct DatabaseClient {
 
     init() {
         setupRealm(databaseName: "db")
-        removeOrphanAudiosAndPodcasts()
     }
 
     private func setupRealm(databaseName: String) {
@@ -33,8 +32,4 @@ struct DatabaseClient {
     }
 
     private func migrateIfNeeded(migration: Migration, oldSchemaVersion: UInt64) {}
-
-    private func removeOrphanAudiosAndPodcasts() {
-        print("TODO: removeOrphanAudiosAndPodcasts")
-    }
 }

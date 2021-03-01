@@ -19,71 +19,42 @@
 		D33C323B25E91A7700168F3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D33C310025E91A7600168F3F /* Localizable.strings */; };
 		D33C323C25E91A7700168F3F /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D33C310225E91A7600168F3F /* Localizable.stringsdict */; };
 		D33C323D25E91A7700168F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33C310625E91A7600168F3F /* Assets.xcassets */; };
-		D33C324225E91A7700168F3F /* Repository+TodayListAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C310D25E91A7600168F3F /* Repository+TodayListAudio.swift */; };
 		D33C324525E91A7700168F3F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311025E91A7600168F3F /* Repository.swift */; };
-		D33C324625E91A7700168F3F /* Repository+Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311125E91A7600168F3F /* Repository+Playlist.swift */; };
+		D33C324625E91A7700168F3F /* Repository+ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311125E91A7600168F3F /* Repository+ListItem.swift */; };
 		D33C324825E91A7700168F3F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311425E91A7600168F3F /* AppState.swift */; };
-		D33C324925E91A7700168F3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311525E91A7600168F3F /* User.swift */; };
-		D33C324A25E91A7700168F3F /* TodayListAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311725E91A7600168F3F /* TodayListAudio.swift */; };
-		D33C324E25E91A7700168F3F /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311B25E91A7600168F3F /* Playlist.swift */; };
+		D33C324E25E91A7700168F3F /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311B25E91A7600168F3F /* ListItem.swift */; };
 		D33C325025E91A7700168F3F /* DatabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311D25E91A7600168F3F /* DatabaseClient.swift */; };
-		D33C325325E91A7700168F3F /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312025E91A7600168F3F /* Audio.swift */; };
-		D33C325425E91A7700168F3F /* TodayListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312425E91A7600168F3F /* TodayListWireframe.swift */; };
-		D33C325525E91A7700168F3F /* PlaylistEpisodesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312525E91A7600168F3F /* PlaylistEpisodesWireframe.swift */; };
-		D33C325625E91A7700168F3F /* PlaylistsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312625E91A7600168F3F /* PlaylistsWireframe.swift */; };
-		D33C325925E91A7700168F3F /* ListsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312925E91A7600168F3F /* ListsWireframe.swift */; };
-		D33C325A25E91A7700168F3F /* TodayListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312B25E91A7600168F3F /* TodayListAssembly.swift */; };
-		D33C325B25E91A7700168F3F /* TodayListParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312C25E91A7600168F3F /* TodayListParams.swift */; };
-		D33C325D25E91A7700168F3F /* PlaylistEpisodesParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312E25E91A7600168F3F /* PlaylistEpisodesParams.swift */; };
-		D33C326125E91A7700168F3F /* ListsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313225E91A7600168F3F /* ListsAssembly.swift */; };
-		D33C326225E91A7700168F3F /* PlaylistsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313325E91A7600168F3F /* PlaylistsAssembly.swift */; };
-		D33C326325E91A7700168F3F /* ListsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313425E91A7600168F3F /* ListsParams.swift */; };
-		D33C326425E91A7700168F3F /* PlaylistEpisodesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313525E91A7600168F3F /* PlaylistEpisodesAssembly.swift */; };
-		D33C326525E91A7700168F3F /* PlaylistsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313625E91A7600168F3F /* PlaylistsParams.swift */; };
-		D33C326825E91A7700168F3F /* ListsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313A25E91A7600168F3F /* ListsPresenter.swift */; };
-		D33C326925E91A7700168F3F /* PlaylistEpisodesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313B25E91A7600168F3F /* PlaylistEpisodesPresenter.swift */; };
-		D33C326A25E91A7700168F3F /* TodayListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313C25E91A7600168F3F /* TodayListPresenter.swift */; };
-		D33C326B25E91A7700168F3F /* PlaylistsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313D25E91A7600168F3F /* PlaylistsPresenter.swift */; };
-		D33C326C25E91A7700168F3F /* ListsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313F25E91A7600168F3F /* ListsInteractor.swift */; };
-		D33C326E25E91A7700168F3F /* TodayListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314125E91A7600168F3F /* TodayListInteractor.swift */; };
-		D33C327025E91A7700168F3F /* PlaylistsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314325E91A7600168F3F /* PlaylistsInteractor.swift */; };
-		D33C327125E91A7700168F3F /* PlaylistEpisodesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314425E91A7600168F3F /* PlaylistEpisodesInteractor.swift */; };
-		D33C327325E91A7700168F3F /* PlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314725E91A7600168F3F /* PlaylistsView.swift */; };
-		D33C327425E91A7700168F3F /* TodayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314825E91A7600168F3F /* TodayListView.swift */; };
-		D33C327525E91A7700168F3F /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314925E91A7600168F3F /* ListsView.swift */; };
-		D33C327625E91A7700168F3F /* PlaylistEpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314A25E91A7600168F3F /* PlaylistEpisodesView.swift */; };
-		D33C327A25E91A7700168F3F /* TodayListBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315025E91A7600168F3F /* TodayListBO.swift */; };
-		D33C327B25E91A7700168F3F /* PlaylistsBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315125E91A7600168F3F /* PlaylistsBO.swift */; };
-		D33C327C25E91A7700168F3F /* PlaylistEpisodesBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315225E91A7600168F3F /* PlaylistEpisodesBO.swift */; };
-		D33C327F25E91A7700168F3F /* TodayListVOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315625E91A7600168F3F /* TodayListVOMapper.swift */; };
-		D33C328225E91A7700168F3F /* TodayListBOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315925E91A7600168F3F /* TodayListBOMapper.swift */; };
-		D33C328325E91A7700168F3F /* PlaylistsVOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315A25E91A7600168F3F /* PlaylistsVOMapper.swift */; };
-		D33C328425E91A7700168F3F /* PlaylistEpisodesBOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315B25E91A7600168F3F /* PlaylistEpisodesBOMapper.swift */; };
-		D33C328525E91A7700168F3F /* PlaylistsBOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315C25E91A7600168F3F /* PlaylistsBOMapper.swift */; };
-		D33C328625E91A7700168F3F /* PlaylistEpisodesVOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315D25E91A7600168F3F /* PlaylistEpisodesVOMapper.swift */; };
-		D33C328825E91A7700168F3F /* TodayListVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316025E91A7600168F3F /* TodayListVO.swift */; };
-		D33C328925E91A7700168F3F /* ListsVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316125E91A7600168F3F /* ListsVO.swift */; };
-		D33C328A25E91A7700168F3F /* PlaylistsVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316225E91A7600168F3F /* PlaylistsVO.swift */; };
-		D33C328C25E91A7700168F3F /* PlaylistEpisodesVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316425E91A7600168F3F /* PlaylistEpisodesVO.swift */; };
-		D33C328E25E91A7700168F3F /* ListsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316725E91A7600168F3F /* ListsViewOutput.swift */; };
-		D33C328F25E91A7700168F3F /* TodayListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316825E91A7600168F3F /* TodayListViewOutput.swift */; };
-		D33C329025E91A7700168F3F /* PlaylistEpisodesViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316925E91A7600168F3F /* PlaylistEpisodesViewOutput.swift */; };
-		D33C329125E91A7700168F3F /* PlaylistsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316A25E91A7600168F3F /* PlaylistsViewOutput.swift */; };
-		D33C329325E91A7700168F3F /* TodayListOnFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316D25E91A7600168F3F /* TodayListOnFetchUseCase.swift */; };
-		D33C329525E91A7700168F3F /* PlaylistEpisodesOnFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316F25E91A7600168F3F /* PlaylistEpisodesOnFetchUseCase.swift */; };
-		D33C329625E91A7700168F3F /* PlaylistsOnFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317025E91A7600168F3F /* PlaylistsOnFetchUseCase.swift */; };
-		D33C329825E91A7700168F3F /* TodayListWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317325E91A7600168F3F /* TodayListWireframeInput.swift */; };
-		D33C329925E91A7700168F3F /* ListsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317425E91A7600168F3F /* ListsInteractorInput.swift */; };
-		D33C329B25E91A7700168F3F /* PlaylistEpisodesInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317625E91A7600168F3F /* PlaylistEpisodesInteractorInput.swift */; };
-		D33C329D25E91A7700168F3F /* ListsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317825E91A7600168F3F /* ListsViewInput.swift */; };
-		D33C329F25E91A7700168F3F /* PlaylistsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317A25E91A7600168F3F /* PlaylistsInteractorInput.swift */; };
-		D33C32A225E91A7700168F3F /* TodayListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317D25E91A7600168F3F /* TodayListInteractorInput.swift */; };
-		D33C32A425E91A7700168F3F /* ListsWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317F25E91A7600168F3F /* ListsWireframeInput.swift */; };
-		D33C32A525E91A7700168F3F /* PlaylistsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318025E91A7600168F3F /* PlaylistsViewInput.swift */; };
-		D33C32A625E91A7700168F3F /* PlaylistEpisodesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318125E91A7600168F3F /* PlaylistEpisodesViewInput.swift */; };
-		D33C32A725E91A7700168F3F /* PlaylistEpisodesWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318225E91A7600168F3F /* PlaylistEpisodesWireframeInput.swift */; };
-		D33C32A825E91A7700168F3F /* TodayListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318325E91A7600168F3F /* TodayListViewInput.swift */; };
-		D33C32A925E91A7700168F3F /* PlaylistsWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318425E91A7600168F3F /* PlaylistsWireframeInput.swift */; };
+		D33C325325E91A7700168F3F /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312025E91A7600168F3F /* ItemDetail.swift */; };
+		D33C325525E91A7700168F3F /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312525E91A7600168F3F /* DetailWireframe.swift */; };
+		D33C325625E91A7700168F3F /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312625E91A7600168F3F /* ListWireframe.swift */; };
+		D33C325D25E91A7700168F3F /* DetailParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312E25E91A7600168F3F /* DetailParams.swift */; };
+		D33C326225E91A7700168F3F /* ListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313325E91A7600168F3F /* ListAssembly.swift */; };
+		D33C326425E91A7700168F3F /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313525E91A7600168F3F /* DetailAssembly.swift */; };
+		D33C326525E91A7700168F3F /* ListParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313625E91A7600168F3F /* ListParams.swift */; };
+		D33C326925E91A7700168F3F /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313B25E91A7600168F3F /* DetailPresenter.swift */; };
+		D33C326B25E91A7700168F3F /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C313D25E91A7600168F3F /* ListPresenter.swift */; };
+		D33C327025E91A7700168F3F /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314325E91A7600168F3F /* ListInteractor.swift */; };
+		D33C327125E91A7700168F3F /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314425E91A7600168F3F /* DetailInteractor.swift */; };
+		D33C327325E91A7700168F3F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314725E91A7600168F3F /* ListView.swift */; };
+		D33C327625E91A7700168F3F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C314A25E91A7600168F3F /* DetailView.swift */; };
+		D33C327B25E91A7700168F3F /* ListBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315125E91A7600168F3F /* ListBO.swift */; };
+		D33C327C25E91A7700168F3F /* DetailBO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315225E91A7600168F3F /* DetailBO.swift */; };
+		D33C328325E91A7700168F3F /* ListVOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315A25E91A7600168F3F /* ListVOMapper.swift */; };
+		D33C328425E91A7700168F3F /* DetailBOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315B25E91A7600168F3F /* DetailBOMapper.swift */; };
+		D33C328525E91A7700168F3F /* ListBOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315C25E91A7600168F3F /* ListBOMapper.swift */; };
+		D33C328625E91A7700168F3F /* DetailVOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C315D25E91A7600168F3F /* DetailVOMapper.swift */; };
+		D33C328A25E91A7700168F3F /* ListVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316225E91A7600168F3F /* ListVO.swift */; };
+		D33C328C25E91A7700168F3F /* DetailVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316425E91A7600168F3F /* DetailVO.swift */; };
+		D33C329025E91A7700168F3F /* DetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316925E91A7600168F3F /* DetailViewOutput.swift */; };
+		D33C329125E91A7700168F3F /* ListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316A25E91A7600168F3F /* ListViewOutput.swift */; };
+		D33C329525E91A7700168F3F /* DetailOnFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C316F25E91A7600168F3F /* DetailOnFetchUseCase.swift */; };
+		D33C329625E91A7700168F3F /* ListOnFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317025E91A7600168F3F /* ListOnFetchUseCase.swift */; };
+		D33C329B25E91A7700168F3F /* DetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317625E91A7600168F3F /* DetailInteractorInput.swift */; };
+		D33C329F25E91A7700168F3F /* ListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C317A25E91A7600168F3F /* ListInteractorInput.swift */; };
+		D33C32A525E91A7700168F3F /* ListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318025E91A7600168F3F /* ListViewInput.swift */; };
+		D33C32A625E91A7700168F3F /* DetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318125E91A7600168F3F /* DetailViewInput.swift */; };
+		D33C32A725E91A7700168F3F /* DetaiWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318225E91A7600168F3F /* DetaiWireframeInput.swift */; };
+		D33C32A925E91A7700168F3F /* ListWireframeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C318425E91A7600168F3F /* ListWireframeInput.swift */; };
 		D33C330025E91A7700168F3F /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C321425E91A7600168F3F /* BaseUseCase.swift */; };
 		D33C330125E91A7700168F3F /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C321525E91A7600168F3F /* BaseWireframe.swift */; };
 		D33C330225E91A7700168F3F /* BaseUseCaseExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C321625E91A7600168F3F /* BaseUseCaseExecutor.swift */; };
@@ -110,7 +81,7 @@
 		D33C335125E9350500168F3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C334F25E9350500168F3F /* SceneDelegate.swift */; };
 		D33C335225E9350500168F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C335025E9350500168F3F /* AppDelegate.swift */; };
 		D33C335A25E9357200168F3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C335925E9357200168F3F /* ContentView.swift */; };
-		D33C338F25E9398E00168F3F /* Repository+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C338E25E9398E00168F3F /* Repository+User.swift */; };
+		D3F5D45525ED41A1006F6D3F /* Repository+ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5D45425ED41A1006F6D3F /* Repository+ItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,71 +124,42 @@
 		D33C310425E91A7600168F3F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D33C310525E91A7600168F3F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = es; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		D33C310625E91A7600168F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D33C310D25E91A7600168F3F /* Repository+TodayListAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+TodayListAudio.swift"; sourceTree = "<group>"; };
 		D33C311025E91A7600168F3F /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		D33C311125E91A7600168F3F /* Repository+Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+Playlist.swift"; sourceTree = "<group>"; };
+		D33C311125E91A7600168F3F /* Repository+ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+ListItem.swift"; sourceTree = "<group>"; };
 		D33C311425E91A7600168F3F /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		D33C311525E91A7600168F3F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		D33C311725E91A7600168F3F /* TodayListAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListAudio.swift; sourceTree = "<group>"; };
-		D33C311B25E91A7600168F3F /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		D33C311B25E91A7600168F3F /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		D33C311D25E91A7600168F3F /* DatabaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseClient.swift; sourceTree = "<group>"; };
-		D33C312025E91A7600168F3F /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
-		D33C312425E91A7600168F3F /* TodayListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListWireframe.swift; sourceTree = "<group>"; };
-		D33C312525E91A7600168F3F /* PlaylistEpisodesWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesWireframe.swift; sourceTree = "<group>"; };
-		D33C312625E91A7600168F3F /* PlaylistsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsWireframe.swift; sourceTree = "<group>"; };
-		D33C312925E91A7600168F3F /* ListsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsWireframe.swift; sourceTree = "<group>"; };
-		D33C312B25E91A7600168F3F /* TodayListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListAssembly.swift; sourceTree = "<group>"; };
-		D33C312C25E91A7600168F3F /* TodayListParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListParams.swift; sourceTree = "<group>"; };
-		D33C312E25E91A7600168F3F /* PlaylistEpisodesParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesParams.swift; sourceTree = "<group>"; };
-		D33C313225E91A7600168F3F /* ListsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsAssembly.swift; sourceTree = "<group>"; };
-		D33C313325E91A7600168F3F /* PlaylistsAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsAssembly.swift; sourceTree = "<group>"; };
-		D33C313425E91A7600168F3F /* ListsParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsParams.swift; sourceTree = "<group>"; };
-		D33C313525E91A7600168F3F /* PlaylistEpisodesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesAssembly.swift; sourceTree = "<group>"; };
-		D33C313625E91A7600168F3F /* PlaylistsParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsParams.swift; sourceTree = "<group>"; };
-		D33C313A25E91A7600168F3F /* ListsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsPresenter.swift; sourceTree = "<group>"; };
-		D33C313B25E91A7600168F3F /* PlaylistEpisodesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesPresenter.swift; sourceTree = "<group>"; };
-		D33C313C25E91A7600168F3F /* TodayListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListPresenter.swift; sourceTree = "<group>"; };
-		D33C313D25E91A7600168F3F /* PlaylistsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsPresenter.swift; sourceTree = "<group>"; };
-		D33C313F25E91A7600168F3F /* ListsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsInteractor.swift; sourceTree = "<group>"; };
-		D33C314125E91A7600168F3F /* TodayListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListInteractor.swift; sourceTree = "<group>"; };
-		D33C314325E91A7600168F3F /* PlaylistsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsInteractor.swift; sourceTree = "<group>"; };
-		D33C314425E91A7600168F3F /* PlaylistEpisodesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesInteractor.swift; sourceTree = "<group>"; };
-		D33C314725E91A7600168F3F /* PlaylistsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsView.swift; sourceTree = "<group>"; };
-		D33C314825E91A7600168F3F /* TodayListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListView.swift; sourceTree = "<group>"; };
-		D33C314925E91A7600168F3F /* ListsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
-		D33C314A25E91A7600168F3F /* PlaylistEpisodesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesView.swift; sourceTree = "<group>"; };
-		D33C315025E91A7600168F3F /* TodayListBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListBO.swift; sourceTree = "<group>"; };
-		D33C315125E91A7600168F3F /* PlaylistsBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsBO.swift; sourceTree = "<group>"; };
-		D33C315225E91A7600168F3F /* PlaylistEpisodesBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesBO.swift; sourceTree = "<group>"; };
-		D33C315625E91A7600168F3F /* TodayListVOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListVOMapper.swift; sourceTree = "<group>"; };
-		D33C315925E91A7600168F3F /* TodayListBOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListBOMapper.swift; sourceTree = "<group>"; };
-		D33C315A25E91A7600168F3F /* PlaylistsVOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsVOMapper.swift; sourceTree = "<group>"; };
-		D33C315B25E91A7600168F3F /* PlaylistEpisodesBOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesBOMapper.swift; sourceTree = "<group>"; };
-		D33C315C25E91A7600168F3F /* PlaylistsBOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsBOMapper.swift; sourceTree = "<group>"; };
-		D33C315D25E91A7600168F3F /* PlaylistEpisodesVOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesVOMapper.swift; sourceTree = "<group>"; };
-		D33C316025E91A7600168F3F /* TodayListVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListVO.swift; sourceTree = "<group>"; };
-		D33C316125E91A7600168F3F /* ListsVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsVO.swift; sourceTree = "<group>"; };
-		D33C316225E91A7600168F3F /* PlaylistsVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsVO.swift; sourceTree = "<group>"; };
-		D33C316425E91A7600168F3F /* PlaylistEpisodesVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesVO.swift; sourceTree = "<group>"; };
-		D33C316725E91A7600168F3F /* ListsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewOutput.swift; sourceTree = "<group>"; };
-		D33C316825E91A7600168F3F /* TodayListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListViewOutput.swift; sourceTree = "<group>"; };
-		D33C316925E91A7600168F3F /* PlaylistEpisodesViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesViewOutput.swift; sourceTree = "<group>"; };
-		D33C316A25E91A7600168F3F /* PlaylistsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsViewOutput.swift; sourceTree = "<group>"; };
-		D33C316D25E91A7600168F3F /* TodayListOnFetchUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListOnFetchUseCase.swift; sourceTree = "<group>"; };
-		D33C316F25E91A7600168F3F /* PlaylistEpisodesOnFetchUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesOnFetchUseCase.swift; sourceTree = "<group>"; };
-		D33C317025E91A7600168F3F /* PlaylistsOnFetchUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsOnFetchUseCase.swift; sourceTree = "<group>"; };
-		D33C317325E91A7600168F3F /* TodayListWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListWireframeInput.swift; sourceTree = "<group>"; };
-		D33C317425E91A7600168F3F /* ListsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsInteractorInput.swift; sourceTree = "<group>"; };
-		D33C317625E91A7600168F3F /* PlaylistEpisodesInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesInteractorInput.swift; sourceTree = "<group>"; };
-		D33C317825E91A7600168F3F /* ListsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewInput.swift; sourceTree = "<group>"; };
-		D33C317A25E91A7600168F3F /* PlaylistsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsInteractorInput.swift; sourceTree = "<group>"; };
-		D33C317D25E91A7600168F3F /* TodayListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListInteractorInput.swift; sourceTree = "<group>"; };
-		D33C317F25E91A7600168F3F /* ListsWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsWireframeInput.swift; sourceTree = "<group>"; };
-		D33C318025E91A7600168F3F /* PlaylistsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsViewInput.swift; sourceTree = "<group>"; };
-		D33C318125E91A7600168F3F /* PlaylistEpisodesViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesViewInput.swift; sourceTree = "<group>"; };
-		D33C318225E91A7600168F3F /* PlaylistEpisodesWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistEpisodesWireframeInput.swift; sourceTree = "<group>"; };
-		D33C318325E91A7600168F3F /* TodayListViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayListViewInput.swift; sourceTree = "<group>"; };
-		D33C318425E91A7600168F3F /* PlaylistsWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistsWireframeInput.swift; sourceTree = "<group>"; };
+		D33C312025E91A7600168F3F /* ItemDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		D33C312525E91A7600168F3F /* DetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
+		D33C312625E91A7600168F3F /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		D33C312E25E91A7600168F3F /* DetailParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailParams.swift; sourceTree = "<group>"; };
+		D33C313325E91A7600168F3F /* ListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAssembly.swift; sourceTree = "<group>"; };
+		D33C313525E91A7600168F3F /* DetailAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
+		D33C313625E91A7600168F3F /* ListParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListParams.swift; sourceTree = "<group>"; };
+		D33C313B25E91A7600168F3F /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		D33C313D25E91A7600168F3F /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		D33C314325E91A7600168F3F /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		D33C314425E91A7600168F3F /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		D33C314725E91A7600168F3F /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D33C314A25E91A7600168F3F /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D33C315125E91A7600168F3F /* ListBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBO.swift; sourceTree = "<group>"; };
+		D33C315225E91A7600168F3F /* DetailBO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBO.swift; sourceTree = "<group>"; };
+		D33C315A25E91A7600168F3F /* ListVOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVOMapper.swift; sourceTree = "<group>"; };
+		D33C315B25E91A7600168F3F /* DetailBOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBOMapper.swift; sourceTree = "<group>"; };
+		D33C315C25E91A7600168F3F /* ListBOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBOMapper.swift; sourceTree = "<group>"; };
+		D33C315D25E91A7600168F3F /* DetailVOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVOMapper.swift; sourceTree = "<group>"; };
+		D33C316225E91A7600168F3F /* ListVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVO.swift; sourceTree = "<group>"; };
+		D33C316425E91A7600168F3F /* DetailVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVO.swift; sourceTree = "<group>"; };
+		D33C316925E91A7600168F3F /* DetailViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewOutput.swift; sourceTree = "<group>"; };
+		D33C316A25E91A7600168F3F /* ListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewOutput.swift; sourceTree = "<group>"; };
+		D33C316F25E91A7600168F3F /* DetailOnFetchUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOnFetchUseCase.swift; sourceTree = "<group>"; };
+		D33C317025E91A7600168F3F /* ListOnFetchUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOnFetchUseCase.swift; sourceTree = "<group>"; };
+		D33C317625E91A7600168F3F /* DetailInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractorInput.swift; sourceTree = "<group>"; };
+		D33C317A25E91A7600168F3F /* ListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorInput.swift; sourceTree = "<group>"; };
+		D33C318025E91A7600168F3F /* ListViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInput.swift; sourceTree = "<group>"; };
+		D33C318125E91A7600168F3F /* DetailViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewInput.swift; sourceTree = "<group>"; };
+		D33C318225E91A7600168F3F /* DetaiWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaiWireframeInput.swift; sourceTree = "<group>"; };
+		D33C318425E91A7600168F3F /* ListWireframeInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframeInput.swift; sourceTree = "<group>"; };
 		D33C321425E91A7600168F3F /* BaseUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
 		D33C321525E91A7600168F3F /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		D33C321625E91A7600168F3F /* BaseUseCaseExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUseCaseExecutor.swift; sourceTree = "<group>"; };
@@ -240,7 +182,7 @@
 		D33C334F25E9350500168F3F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D33C335025E9350500168F3F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D33C335925E9357200168F3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D33C338E25E9398E00168F3F /* Repository+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Repository+User.swift"; sourceTree = "<group>"; };
+		D3F5D45425ED41A1006F6D3F /* Repository+ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+ItemDetail.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,9 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				D33C311025E91A7600168F3F /* Repository.swift */,
-				D33C338E25E9398E00168F3F /* Repository+User.swift */,
-				D33C310D25E91A7600168F3F /* Repository+TodayListAudio.swift */,
-				D33C311125E91A7600168F3F /* Repository+Playlist.swift */,
+				D33C311125E91A7600168F3F /* Repository+ListItem.swift */,
+				D3F5D45425ED41A1006F6D3F /* Repository+ItemDetail.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -386,7 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				D33C311425E91A7600168F3F /* AppState.swift */,
-				D33C311525E91A7600168F3F /* User.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -395,9 +335,8 @@
 			isa = PBXGroup;
 			children = (
 				D33C311D25E91A7600168F3F /* DatabaseClient.swift */,
-				D33C312025E91A7600168F3F /* Audio.swift */,
-				D33C311725E91A7600168F3F /* TodayListAudio.swift */,
-				D33C311B25E91A7600168F3F /* Playlist.swift */,
+				D33C311B25E91A7600168F3F /* ListItem.swift */,
+				D33C312025E91A7600168F3F /* ItemDetail.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -426,10 +365,8 @@
 		D33C312325E91A7600168F3F /* Wireframes */ = {
 			isa = PBXGroup;
 			children = (
-				D33C312925E91A7600168F3F /* ListsWireframe.swift */,
-				D33C312425E91A7600168F3F /* TodayListWireframe.swift */,
-				D33C312525E91A7600168F3F /* PlaylistEpisodesWireframe.swift */,
-				D33C312625E91A7600168F3F /* PlaylistsWireframe.swift */,
+				D33C312625E91A7600168F3F /* ListWireframe.swift */,
+				D33C312525E91A7600168F3F /* DetailWireframe.swift */,
 			);
 			path = Wireframes;
 			sourceTree = "<group>";
@@ -437,14 +374,10 @@
 		D33C312A25E91A7600168F3F /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				D33C313425E91A7600168F3F /* ListsParams.swift */,
-				D33C313225E91A7600168F3F /* ListsAssembly.swift */,
-				D33C312C25E91A7600168F3F /* TodayListParams.swift */,
-				D33C312B25E91A7600168F3F /* TodayListAssembly.swift */,
-				D33C313625E91A7600168F3F /* PlaylistsParams.swift */,
-				D33C313325E91A7600168F3F /* PlaylistsAssembly.swift */,
-				D33C312E25E91A7600168F3F /* PlaylistEpisodesParams.swift */,
-				D33C313525E91A7600168F3F /* PlaylistEpisodesAssembly.swift */,
+				D33C313625E91A7600168F3F /* ListParams.swift */,
+				D33C313325E91A7600168F3F /* ListAssembly.swift */,
+				D33C312E25E91A7600168F3F /* DetailParams.swift */,
+				D33C313525E91A7600168F3F /* DetailAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -452,10 +385,8 @@
 		D33C313725E91A7600168F3F /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				D33C313A25E91A7600168F3F /* ListsPresenter.swift */,
-				D33C313C25E91A7600168F3F /* TodayListPresenter.swift */,
-				D33C313D25E91A7600168F3F /* PlaylistsPresenter.swift */,
-				D33C313B25E91A7600168F3F /* PlaylistEpisodesPresenter.swift */,
+				D33C313D25E91A7600168F3F /* ListPresenter.swift */,
+				D33C313B25E91A7600168F3F /* DetailPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -463,10 +394,8 @@
 		D33C313E25E91A7600168F3F /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				D33C313F25E91A7600168F3F /* ListsInteractor.swift */,
-				D33C314125E91A7600168F3F /* TodayListInteractor.swift */,
-				D33C314325E91A7600168F3F /* PlaylistsInteractor.swift */,
-				D33C314425E91A7600168F3F /* PlaylistEpisodesInteractor.swift */,
+				D33C314325E91A7600168F3F /* ListInteractor.swift */,
+				D33C314425E91A7600168F3F /* DetailInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -474,10 +403,8 @@
 		D33C314525E91A7600168F3F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D33C314925E91A7600168F3F /* ListsView.swift */,
-				D33C314825E91A7600168F3F /* TodayListView.swift */,
-				D33C314725E91A7600168F3F /* PlaylistsView.swift */,
-				D33C314A25E91A7600168F3F /* PlaylistEpisodesView.swift */,
+				D33C314725E91A7600168F3F /* ListView.swift */,
+				D33C314A25E91A7600168F3F /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -498,9 +425,8 @@
 		D33C314D25E91A7600168F3F /* BusinessObjects */ = {
 			isa = PBXGroup;
 			children = (
-				D33C315025E91A7600168F3F /* TodayListBO.swift */,
-				D33C315125E91A7600168F3F /* PlaylistsBO.swift */,
-				D33C315225E91A7600168F3F /* PlaylistEpisodesBO.swift */,
+				D33C315125E91A7600168F3F /* ListBO.swift */,
+				D33C315225E91A7600168F3F /* DetailBO.swift */,
 			);
 			path = BusinessObjects;
 			sourceTree = "<group>";
@@ -508,12 +434,10 @@
 		D33C315325E91A7600168F3F /* Mappers */ = {
 			isa = PBXGroup;
 			children = (
-				D33C315625E91A7600168F3F /* TodayListVOMapper.swift */,
-				D33C315925E91A7600168F3F /* TodayListBOMapper.swift */,
-				D33C315A25E91A7600168F3F /* PlaylistsVOMapper.swift */,
-				D33C315C25E91A7600168F3F /* PlaylistsBOMapper.swift */,
-				D33C315D25E91A7600168F3F /* PlaylistEpisodesVOMapper.swift */,
-				D33C315B25E91A7600168F3F /* PlaylistEpisodesBOMapper.swift */,
+				D33C315A25E91A7600168F3F /* ListVOMapper.swift */,
+				D33C315C25E91A7600168F3F /* ListBOMapper.swift */,
+				D33C315D25E91A7600168F3F /* DetailVOMapper.swift */,
+				D33C315B25E91A7600168F3F /* DetailBOMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -521,10 +445,8 @@
 		D33C315E25E91A7600168F3F /* ViewObjects */ = {
 			isa = PBXGroup;
 			children = (
-				D33C316125E91A7600168F3F /* ListsVO.swift */,
-				D33C316025E91A7600168F3F /* TodayListVO.swift */,
-				D33C316225E91A7600168F3F /* PlaylistsVO.swift */,
-				D33C316425E91A7600168F3F /* PlaylistEpisodesVO.swift */,
+				D33C316225E91A7600168F3F /* ListVO.swift */,
+				D33C316425E91A7600168F3F /* DetailVO.swift */,
 			);
 			path = ViewObjects;
 			sourceTree = "<group>";
@@ -532,10 +454,8 @@
 		D33C316525E91A7600168F3F /* Outputs */ = {
 			isa = PBXGroup;
 			children = (
-				D33C316725E91A7600168F3F /* ListsViewOutput.swift */,
-				D33C316825E91A7600168F3F /* TodayListViewOutput.swift */,
-				D33C316A25E91A7600168F3F /* PlaylistsViewOutput.swift */,
-				D33C316925E91A7600168F3F /* PlaylistEpisodesViewOutput.swift */,
+				D33C316A25E91A7600168F3F /* ListViewOutput.swift */,
+				D33C316925E91A7600168F3F /* DetailViewOutput.swift */,
 			);
 			path = Outputs;
 			sourceTree = "<group>";
@@ -543,9 +463,8 @@
 		D33C316C25E91A7600168F3F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				D33C316D25E91A7600168F3F /* TodayListOnFetchUseCase.swift */,
-				D33C317025E91A7600168F3F /* PlaylistsOnFetchUseCase.swift */,
-				D33C316F25E91A7600168F3F /* PlaylistEpisodesOnFetchUseCase.swift */,
+				D33C317025E91A7600168F3F /* ListOnFetchUseCase.swift */,
+				D33C316F25E91A7600168F3F /* DetailOnFetchUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -553,18 +472,12 @@
 		D33C317225E91A7600168F3F /* Inputs */ = {
 			isa = PBXGroup;
 			children = (
-				D33C317825E91A7600168F3F /* ListsViewInput.swift */,
-				D33C317F25E91A7600168F3F /* ListsWireframeInput.swift */,
-				D33C317425E91A7600168F3F /* ListsInteractorInput.swift */,
-				D33C318325E91A7600168F3F /* TodayListViewInput.swift */,
-				D33C317325E91A7600168F3F /* TodayListWireframeInput.swift */,
-				D33C317D25E91A7600168F3F /* TodayListInteractorInput.swift */,
-				D33C318025E91A7600168F3F /* PlaylistsViewInput.swift */,
-				D33C318425E91A7600168F3F /* PlaylistsWireframeInput.swift */,
-				D33C317A25E91A7600168F3F /* PlaylistsInteractorInput.swift */,
-				D33C318125E91A7600168F3F /* PlaylistEpisodesViewInput.swift */,
-				D33C318225E91A7600168F3F /* PlaylistEpisodesWireframeInput.swift */,
-				D33C317625E91A7600168F3F /* PlaylistEpisodesInteractorInput.swift */,
+				D33C318025E91A7600168F3F /* ListViewInput.swift */,
+				D33C318425E91A7600168F3F /* ListWireframeInput.swift */,
+				D33C317A25E91A7600168F3F /* ListInteractorInput.swift */,
+				D33C318125E91A7600168F3F /* DetailViewInput.swift */,
+				D33C318225E91A7600168F3F /* DetaiWireframeInput.swift */,
+				D33C317625E91A7600168F3F /* DetailInteractorInput.swift */,
 			);
 			path = Inputs;
 			sourceTree = "<group>";
@@ -802,99 +715,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D33C324225E91A7700168F3F /* Repository+TodayListAudio.swift in Sources */,
-				D33C329B25E91A7700168F3F /* PlaylistEpisodesInteractorInput.swift in Sources */,
-				D33C32A625E91A7700168F3F /* PlaylistEpisodesViewInput.swift in Sources */,
-				D33C324625E91A7700168F3F /* Repository+Playlist.swift in Sources */,
-				D33C326125E91A7700168F3F /* ListsAssembly.swift in Sources */,
-				D33C328825E91A7700168F3F /* TodayListVO.swift in Sources */,
-				D33C328225E91A7700168F3F /* TodayListBOMapper.swift in Sources */,
+				D33C329B25E91A7700168F3F /* DetailInteractorInput.swift in Sources */,
+				D33C32A625E91A7700168F3F /* DetailViewInput.swift in Sources */,
+				D33C324625E91A7700168F3F /* Repository+ListItem.swift in Sources */,
 				D33C323A25E91A7700168F3F /* UserDefaults+Custom.swift in Sources */,
-				D33C32A225E91A7700168F3F /* TodayListInteractorInput.swift in Sources */,
-				D33C327125E91A7700168F3F /* PlaylistEpisodesInteractor.swift in Sources */,
+				D33C327125E91A7700168F3F /* DetailInteractor.swift in Sources */,
 				D33C330B25E91A7700168F3F /* CustomViewStyle.swift in Sources */,
 				D33C324825E91A7700168F3F /* AppState.swift in Sources */,
 				D33C330425E91A7700168F3F /* BaseProtocols.swift in Sources */,
-				D33C329925E91A7700168F3F /* ListsInteractorInput.swift in Sources */,
-				D33C325D25E91A7700168F3F /* PlaylistEpisodesParams.swift in Sources */,
+				D33C325D25E91A7700168F3F /* DetailParams.swift in Sources */,
 				D33C330025E91A7700168F3F /* BaseUseCase.swift in Sources */,
 				D33C331825E91A7700168F3F /* Endpoints.swift in Sources */,
 				D33C330A25E91A7700168F3F /* CustomViewModifier.swift in Sources */,
 				D33C330525E91A7700168F3F /* BaseAssembly.swift in Sources */,
-				D33C325325E91A7700168F3F /* Audio.swift in Sources */,
-				D33C325925E91A7700168F3F /* ListsWireframe.swift in Sources */,
-				D33C32A525E91A7700168F3F /* PlaylistsViewInput.swift in Sources */,
+				D33C325325E91A7700168F3F /* ItemDetail.swift in Sources */,
+				D33C32A525E91A7700168F3F /* ListViewInput.swift in Sources */,
 				D33C324525E91A7700168F3F /* Repository.swift in Sources */,
 				D33C323725E91A7700168F3F /* Date+Custom.swift in Sources */,
-				D33C329025E91A7700168F3F /* PlaylistEpisodesViewOutput.swift in Sources */,
+				D33C329025E91A7700168F3F /* DetailViewOutput.swift in Sources */,
 				D33C335A25E9357200168F3F /* ContentView.swift in Sources */,
-				D33C326C25E91A7700168F3F /* ListsInteractor.swift in Sources */,
-				D33C328425E91A7700168F3F /* PlaylistEpisodesBOMapper.swift in Sources */,
-				D33C327C25E91A7700168F3F /* PlaylistEpisodesBO.swift in Sources */,
+				D33C328425E91A7700168F3F /* DetailBOMapper.swift in Sources */,
+				D33C327C25E91A7700168F3F /* DetailBO.swift in Sources */,
 				D33C323625E91A7700168F3F /* String+Custom.swift in Sources */,
 				D33C335225E9350500168F3F /* AppDelegate.swift in Sources */,
-				D33C327325E91A7700168F3F /* PlaylistsView.swift in Sources */,
-				D33C329525E91A7700168F3F /* PlaylistEpisodesOnFetchUseCase.swift in Sources */,
+				D33C327325E91A7700168F3F /* ListView.swift in Sources */,
+				D33C329525E91A7700168F3F /* DetailOnFetchUseCase.swift in Sources */,
 				D33C330725E91A7700168F3F /* BaseMapper.swift in Sources */,
-				D33C32A925E91A7700168F3F /* PlaylistsWireframeInput.swift in Sources */,
-				D33C324E25E91A7700168F3F /* Playlist.swift in Sources */,
-				D33C328625E91A7700168F3F /* PlaylistEpisodesVOMapper.swift in Sources */,
+				D33C32A925E91A7700168F3F /* ListWireframeInput.swift in Sources */,
+				D33C324E25E91A7700168F3F /* ListItem.swift in Sources */,
+				D33C328625E91A7700168F3F /* DetailVOMapper.swift in Sources */,
 				D33C325025E91A7700168F3F /* DatabaseClient.swift in Sources */,
-				D33C327F25E91A7700168F3F /* TodayListVOMapper.swift in Sources */,
-				D33C329D25E91A7700168F3F /* ListsViewInput.swift in Sources */,
-				D33C327625E91A7700168F3F /* PlaylistEpisodesView.swift in Sources */,
-				D33C327B25E91A7700168F3F /* PlaylistsBO.swift in Sources */,
-				D33C329325E91A7700168F3F /* TodayListOnFetchUseCase.swift in Sources */,
-				D33C326925E91A7700168F3F /* PlaylistEpisodesPresenter.swift in Sources */,
-				D33C329F25E91A7700168F3F /* PlaylistsInteractorInput.swift in Sources */,
+				D33C327625E91A7700168F3F /* DetailView.swift in Sources */,
+				D33C327B25E91A7700168F3F /* ListBO.swift in Sources */,
+				D33C326925E91A7700168F3F /* DetailPresenter.swift in Sources */,
+				D33C329F25E91A7700168F3F /* ListInteractorInput.swift in Sources */,
 				D33C331525E91A7700168F3F /* NetworkClientConstants.swift in Sources */,
-				D33C329825E91A7700168F3F /* TodayListWireframeInput.swift in Sources */,
-				D33C325B25E91A7700168F3F /* TodayListParams.swift in Sources */,
 				D33C331625E91A7700168F3F /* AssetsConstants.swift in Sources */,
-				D33C328A25E91A7700168F3F /* PlaylistsVO.swift in Sources */,
+				D33C328A25E91A7700168F3F /* ListVO.swift in Sources */,
 				D33C335125E9350500168F3F /* SceneDelegate.swift in Sources */,
-				D33C328325E91A7700168F3F /* PlaylistsVOMapper.swift in Sources */,
-				D33C326225E91A7700168F3F /* PlaylistsAssembly.swift in Sources */,
-				D33C326525E91A7700168F3F /* PlaylistsParams.swift in Sources */,
+				D33C328325E91A7700168F3F /* ListVOMapper.swift in Sources */,
+				D33C326225E91A7700168F3F /* ListAssembly.swift in Sources */,
+				D33C326525E91A7700168F3F /* ListParams.swift in Sources */,
 				D33C323525E91A7700168F3F /* TimeInterval+Custom.swift in Sources */,
-				D33C324A25E91A7700168F3F /* TodayListAudio.swift in Sources */,
-				D33C326325E91A7700168F3F /* ListsParams.swift in Sources */,
-				D33C328525E91A7700168F3F /* PlaylistsBOMapper.swift in Sources */,
-				D33C328E25E91A7700168F3F /* ListsViewOutput.swift in Sources */,
-				D33C327025E91A7700168F3F /* PlaylistsInteractor.swift in Sources */,
-				D33C327525E91A7700168F3F /* ListsView.swift in Sources */,
+				D33C328525E91A7700168F3F /* ListBOMapper.swift in Sources */,
+				D33C327025E91A7700168F3F /* ListInteractor.swift in Sources */,
 				D33C331725E91A7700168F3F /* NetworkClient.swift in Sources */,
-				D33C327A25E91A7700168F3F /* TodayListBO.swift in Sources */,
-				D33C32A825E91A7700168F3F /* TodayListViewInput.swift in Sources */,
-				D33C327425E91A7700168F3F /* TodayListView.swift in Sources */,
-				D33C328C25E91A7700168F3F /* PlaylistEpisodesVO.swift in Sources */,
+				D33C328C25E91A7700168F3F /* DetailVO.swift in Sources */,
 				D33C323925E91A7700168F3F /* Formatter+Custom.swift in Sources */,
-				D33C328925E91A7700168F3F /* ListsVO.swift in Sources */,
-				D33C325525E91A7700168F3F /* PlaylistEpisodesWireframe.swift in Sources */,
-				D33C325A25E91A7700168F3F /* TodayListAssembly.swift in Sources */,
+				D33C325525E91A7700168F3F /* DetailWireframe.swift in Sources */,
 				D33C330225E91A7700168F3F /* BaseUseCaseExecutor.swift in Sources */,
 				D33C330125E91A7700168F3F /* BaseWireframe.swift in Sources */,
-				D33C329625E91A7700168F3F /* PlaylistsOnFetchUseCase.swift in Sources */,
+				D33C329625E91A7700168F3F /* ListOnFetchUseCase.swift in Sources */,
 				D33C323425E91A7700168F3F /* NSError+Generic.swift in Sources */,
-				D33C325625E91A7700168F3F /* PlaylistsWireframe.swift in Sources */,
-				D33C326A25E91A7700168F3F /* TodayListPresenter.swift in Sources */,
+				D33C325625E91A7700168F3F /* ListWireframe.swift in Sources */,
 				D33C330625E91A7700168F3F /* BasePresenter.swift in Sources */,
-				D33C338F25E9398E00168F3F /* Repository+User.swift in Sources */,
 				D33C323825E91A7700168F3F /* TransformType+Custom.swift in Sources */,
-				D33C326825E91A7700168F3F /* ListsPresenter.swift in Sources */,
-				D33C32A725E91A7700168F3F /* PlaylistEpisodesWireframeInput.swift in Sources */,
-				D33C32A425E91A7700168F3F /* ListsWireframeInput.swift in Sources */,
-				D33C326425E91A7700168F3F /* PlaylistEpisodesAssembly.swift in Sources */,
+				D33C32A725E91A7700168F3F /* DetaiWireframeInput.swift in Sources */,
+				D33C326425E91A7700168F3F /* DetailAssembly.swift in Sources */,
+				D3F5D45525ED41A1006F6D3F /* Repository+ItemDetail.swift in Sources */,
 				D33C331425E91A7700168F3F /* AppConstants.swift in Sources */,
-				D33C326E25E91A7700168F3F /* TodayListInteractor.swift in Sources */,
-				D33C329125E91A7700168F3F /* PlaylistsViewOutput.swift in Sources */,
-				D33C326B25E91A7700168F3F /* PlaylistsPresenter.swift in Sources */,
-				D33C325425E91A7700168F3F /* TodayListWireframe.swift in Sources */,
+				D33C329125E91A7700168F3F /* ListViewOutput.swift in Sources */,
+				D33C326B25E91A7700168F3F /* ListPresenter.swift in Sources */,
 				D33C330925E91A7700168F3F /* CustomView.swift in Sources */,
 				D33C330325E91A7700168F3F /* BaseInteractor.swift in Sources */,
-				D33C328F25E91A7700168F3F /* TodayListViewOutput.swift in Sources */,
 				D33C330825E91A7700168F3F /* BaseView.swift in Sources */,
-				D33C324925E91A7700168F3F /* User.swift in Sources */,
 				D33C331025E91A7700168F3F /* CleanArchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

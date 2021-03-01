@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ListButtonStyle: PrimitiveButtonStyle {
+struct ExampleButtonStyle: PrimitiveButtonStyle {
     let backgroundColor: Assets.Colors
 
     func makeBody(configuration: Self.Configuration) -> some View {
@@ -20,22 +20,5 @@ struct ListButtonStyle: PrimitiveButtonStyle {
                 .cornerRadius(9)
         })
         .buttonStyle(PlainButtonStyle())
-    }
-}
-
-struct PlayerButtonStyle: PrimitiveButtonStyle {
-    let disabled: Bool
-
-    init(disabled: Bool = false) {
-        self.disabled = disabled
-    }
-
-    func makeBody(configuration: Self.Configuration) -> some View {
-        Button(action: configuration.trigger, label: {
-            configuration.label
-                .padding(0)
-        })
-        .buttonStyle(PlainButtonStyle())
-        .disabled(disabled)
     }
 }

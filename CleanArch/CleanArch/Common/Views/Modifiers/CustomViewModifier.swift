@@ -8,8 +8,7 @@
 import Foundation
 import SwiftUI
 
-
-struct CustomTextModifier: ViewModifier {
+struct ExampleTextModifier: ViewModifier {
     let disabled: Bool
 
     init(disabled: Bool = false) {

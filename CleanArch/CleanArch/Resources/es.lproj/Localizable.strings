@@ -4,75 +4,13 @@
 
 // PLEASE SORT ALPHABETICALLY!
 
-"access" = "Acceder";
-
-"downloads" = "Descargas";
-
-"email" = "Email";
-"enter_data" = "Introduce tus datos";
 "error_generic" = "Ha ocurrido un error";
 "error_login" = "No se ha podido\niniciar la sesión.\nInténtalo de nuevo.";
-"error_pagination" = "No hay más elementos";
 "error_password" = "Email o contraseña incorrectos";
-"error_player_asset" = "No es posible reproducir el episodio";
-"error_player_asset_title" = "Episodio no disponible";
-"error_player_connection" = "No hay conexión a Internet disponible";
-"error_player_connection_title" = "No se puede escuchar el episodio";
-"error_player_route" = "No hay conectados auriculares o altavoz";
-"error_sso" = "iVoox no autorizó el token Single Sign-On";
 
-"history" = "Historial";
+"placeholder_item_details_body" = "No hay detalles que mostrar";
+"placeholder_item_details_title" = "No estará vacío mucho tiempo";
+"placeholder_list_items_body" = "Aún no hay elementos";
+"placeholder_list_items_title" = "Aparecerán en cuanto estén disponibles";
 
-"know_more" = "Saber más";
-
-"lists" = "Listas";
-"lists_today" = "Hoy para ti";
-"lists_favorites" = "Favoritos";
-"lists_listen_later" = "Escuchar más tarde";
-
-"new_episodes" = "Nuevos episodios";
-"next_play_queue" = "A continuación";
-"now_playing" = "Ahora suena";
-"now_playing_queue" = "Ahora";
-
-"ok" = "Ok";
-
-"password" = "Contraseña";
-"placeholder_favorites" = "Aún no hay ningún episodio favorito";
-"placeholder_favorites_body" = "Cuando añadas episodios favoritos, aparecerán aquí";
-"placeholder_listen_later" = "No hay episodios para escuchar más tarde";
-"placeholder_listen_later_body" = "Cuando los añadas, aparecerán aquí";
-"placeholder_new_episodes" = "No hay nuevos episodios";
-"placeholder_new_episodes_body" = "Cuando estén disponibles, aparecerán aquí";
-"placeholder_play_queue" = "No hay episodios\nen cola";
-"placeholder_play_queue_body" = "Cuando tengas, aparecerán aquí";
-"placeholder_playlist_episodes" = "Esta lista aún no contiene episodios";
-"placeholder_playlist_episodes_body" = "Cuando añadas episodios a la lista, aparecerán aquí";
-"placeholder_playlists" = "No hay listas de reproducción";
-"placeholder_playlists_body" = "Cuando tengas alguna, aparecerá aquí";
-"placeholder_today" = "Estamos buscando los episodios que más se adaptan a ti";
-"placeholder_today_body" = "Sigue escuchando para ayudarnos a conocer tus gustos";
-"player_empty" = "No hay nada sonando";
-"player_empty_subtitle" = "Escucha los mejores podcast en Tu Contenido o Explorar";
-"play_queue" = "Cola de reproducción";
-"play_rate" = "Velocidad";
-"premium_advantage_no_ads" = "Sin publicidad";
-"premium_advantage_sync" = "Sincronización entre dispositivos";
-"premium_advantage_vol" = "Mejora el volumen";
-"premium_box_body" = "Disfruta iVoox en tu Apple Watch, y otras ventajas Premium en la app";
-"premium_box_button" = "%@ Días gratis";
-"premium_box_price" = "Después %@ €/mes";
-"premium_box_title" = "Hazte Premium";
-"premium_header" = "iVoox Watch solo está disponible para usuarios Premium o Plus";
-"premium_try" = "Probar gratis";
-
-"settings" = "Ajustes";
-"sign_in_apple" = "Iniciar sesión";
-"sign_out" = "Cerrar sesión";
-"subscriptions" = "Suscripciones";
-"syncing" = "Sincronizando con iPhone";
-
-"terms" = "Términos";
 "today" = "Hoy";
-
-"voice_boost" = "Mejora de voz";

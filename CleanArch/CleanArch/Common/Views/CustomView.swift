@@ -13,7 +13,7 @@ import SDWebImageSwiftUI
 
 struct CustomView {
 
-    struct MyCustomView: View {
+    struct ExampleCustomView: View {
         var body: some View {
             ScrollView {
                 Text("TODO")
@@ -45,27 +45,6 @@ extension CustomView {
 extension CustomView {
 
     struct PlaceholderView: View {
-        let iconName: String
-        let textTitle: String
-        let textBody: String
-
-        var body: some View {
-            VStack(alignment: .center, spacing: 3) {
-                Spacer()
-                Image(iconName)
-                    .frame(width: 32, height: 32)
-                Text(textTitle)
-                    .fontWeight(.semibold)
-                    .multilineTextAlignment(.center)
-                Text(textBody)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color(Assets.Colors.PlaceholderSecondary.rawValue))
-                Spacer()
-            }
-        }
-    }
-
-    struct PlaceholderCompactView: View {
         let iconName: String
         let textTitle: String
         let textBody: String
@@ -120,24 +99,6 @@ extension CustomView {
                 }
             }
         }
-
-        struct Badge: View {
-            let label: String
-            let disabled: Bool
-
-            init(_ label: String = "", disabled: Bool = false) {
-                self.label = label
-                self.disabled = disabled
-            }
-
-            var body: some View {
-                Text(label)
-                    .padding(3)
-                    .background(disabled ? .black : Color(Assets.Colors.Badge.rawValue))
-                    .foregroundColor(disabled ? Color(Assets.Colors.TextDisabled.rawValue) : .white)
-                    .clipShape(Circle())
-            }
-        }
     }
 }
 
@@ -145,43 +106,12 @@ extension CustomView {
 
 extension CustomView {
 
-    struct AudioCell: View {
-        let audio: Audio
-
-        init(_ audio: Audio) {
-            self.audio = audio
-        }
-
-        var body: some View {
-            HStack(alignment: .top, spacing: 5) {
-                WebImage(url: audio.image)
-                    .resizable()
-                    .placeholder(Image(Assets.Icons.Placeholder.rawValue))
-                    .transition(.fade(duration: 0.5))
-                    .scaledToFit()
-                    .frame(width: 24, height: 24)
-                    .cornerRadius(1)
-                    .padding(.top, 4)
-                VStack(alignment: .leading) {
-                    Text(audio.title)
-                        .lineLimit(2)
-                    HStack {
-                        Text(audio.uplodateTimestampPretty)
-                        Text(audio.duration)
-                    }
-                    .lineLimit(1)
-                    .foregroundColor(Color(Assets.Colors.CellTextSecondary.rawValue))
-                }
-            }
-        }
-    }
-
-    struct PlaylistCell: View {
-        let playlist: Playlist
+    struct ListItemCell: View {
+        let listItem: ListItem
         @State private var images = [URL]()
 
-        init(_ playlist: Playlist) {
-            self.playlist = playlist
+        init(_ listItem: ListItem) {
+            self.listItem = listItem
         }
 
         var body: some View {
@@ -198,15 +128,43 @@ extension CustomView {
                     .scaledToFit()
                     .frame(width: 24, height: 24)
                     .cornerRadius(1)
-                Text(playlist.title)
+                Text(listItem.name)
                     .lineLimit(2)
                 Spacer()
             }
             .onAppear(perform: {
                 if images.count == 0 {
-                    images = playlist.imgFiles
+                    images = listItem.avatarUrls
                 }
             })
+        }
+    }
+
+    struct ItemDetailCell: View {
+        let itemDetail: ItemDetail
+
+        init(_ itemDetail: ItemDetail) {
+            self.itemDetail = itemDetail
+        }
+
+        var body: some View {
+            HStack(alignment: .top, spacing: 5) {
+                WebImage(url: itemDetail.image)
+                    .resizable()
+                    .placeholder(Image(Assets.Icons.Placeholder.rawValue))
+                    .transition(.fade(duration: 0.5))
+                    .scaledToFit()
+                    .frame(width: 24, height: 24)
+                    .cornerRadius(1)
+                    .padding(.top, 4)
+                VStack(alignment: .leading) {
+                    Text(itemDetail.name)
+                        .lineLimit(2)
+                    Text(itemDetail.timestampPretty)
+                        .lineLimit(1)
+                        .foregroundColor(Color(Assets.Colors.CellTextSecondary.rawValue))
+                }
+            }
         }
     }
 }

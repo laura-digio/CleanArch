@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            ListsWireframe().view
+            ListWireframe().view
                 .navigationBarTitle("CleanArch")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

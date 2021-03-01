@@ -8,12 +8,8 @@
 import Foundation
 
 final class AppState: Codable {
-    var shouldSync: Bool = true
-
     private enum CodingKeys: CodingKey {
         case selectedTab
-        case voiceBoostEnabled
-        case playerRate
     }
 
     @Published var selectedTab: Int = 1 {
@@ -23,22 +19,16 @@ final class AppState: Codable {
         }
     }
 
-    // MARK: - Settings
-    @Published var voiceBoostEnabled: Bool = false
-    @Published var playerRate: Float = 1.0
-
     init() {}
 
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        voiceBoostEnabled = try container.decode(Bool.self, forKey: .voiceBoostEnabled)
-        playerRate = try container.decode(Float.self, forKey: .playerRate)
+        selectedTab = try container.decode(Int.self, forKey: .selectedTab)
     }
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(voiceBoostEnabled, forKey: .voiceBoostEnabled)
-        try container.encode(playerRate, forKey: .playerRate)
+        try container.encode(selectedTab, forKey: .selectedTab)
     }
 }
 

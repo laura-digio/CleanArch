@@ -11,14 +11,13 @@
 
 @main
 struct CleanArchApp: App {
-    let wireframe = MainWireframe()
-
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                wireframe.mainView(checkLogin: true)
+                ListWireframe().view
                     .navigationBarTitle("CleanArch")
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }*/

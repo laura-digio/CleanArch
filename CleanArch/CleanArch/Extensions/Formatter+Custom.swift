@@ -9,7 +9,7 @@ import Foundation
 
 extension Formatter {
 
-    static let playerLong: DateComponentsFormatter = {
+    static let Long: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
         formatter.unitsStyle = .positional
         formatter.allowedUnits = [.hour, .minute, .second]
@@ -17,7 +17,7 @@ extension Formatter {
         return formatter
     }()
 
-    static let playerShort: DateComponentsFormatter = {
+    static let Short: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
         formatter.unitsStyle = .positional
         formatter.allowedUnits = [.minute, .second]

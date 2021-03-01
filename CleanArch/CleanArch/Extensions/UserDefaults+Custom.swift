@@ -9,18 +9,8 @@ import Foundation
 
 extension UserDefaults {
     private enum Keys: String {
-        case user
-        case audio
         case appState
     }
-
-    // Get, Set and Remove user!
-    @Storage(key: UserDefaults.Keys.user.rawValue, defaultValue: nil)
-    static var user: User?
-
-    // Get, Set and Remove audio!
-    @Storage(key: UserDefaults.Keys.audio.rawValue, defaultValue: nil)
-    static var audio: Audio?
 
     // Get, Set and Remove appState!
     @Storage(key: UserDefaults.Keys.appState.rawValue, defaultValue: nil)
