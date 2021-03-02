@@ -13,10 +13,6 @@ class DetailPresenter: BasePresenter {
 
     private let interactor: DetailInteractor
 
-    private var ssot: [ItemDetail] = []
-    private var page: UInt = 1
-    private var isLastPage: Bool = false
-
     init(interactor: DetailInteractor) {
         self.interactor = interactor
     }
@@ -24,19 +20,8 @@ class DetailPresenter: BasePresenter {
 
 extension DetailPresenter: DetailViewOutput {
 
-    func onFetch(condition: Int?) {
-        if let itemID = condition {
-            if isLastPage || ssot.last?.id != itemID {
-                return
-            }
-        }
-        else {
-            page = 1
-            ssot.removeAll()
-            isLastPage = false
-        }
-
-        interactor.onFetch(page: page) { [weak self] result in
+    func onFetch() {
+        interactor.onFetch() { [weak self] result in
             self?.processResult(result)
         }
     }
@@ -51,13 +36,6 @@ private extension DetailPresenter {
         case .success(let bo):
             do {
                 let vo = try DetailVOMapper().map(input: bo)
-
-                if let items = vo.items {
-                    ssot = Array(items)
-                }
-                isLastPage = !vo.loading
-                page += vo.loading ? 1 : 0
-
                 viewInput?.refresh(vo)
             } catch {
                 processFailure(error)

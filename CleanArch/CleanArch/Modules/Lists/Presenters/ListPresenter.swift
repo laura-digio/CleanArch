@@ -21,7 +21,7 @@ class ListPresenter: BasePresenter {
 extension ListPresenter: ListViewOutput {
 
     func onFetch() {
-        interactor.onFetch(username: "laura-digio") { [weak self] result in
+        interactor.onFetch() { [weak self] result in
             self?.processResult(result)
         }
     }

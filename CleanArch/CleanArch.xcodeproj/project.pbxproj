@@ -24,7 +24,7 @@
 		D33C324825E91A7700168F3F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311425E91A7600168F3F /* AppState.swift */; };
 		D33C324E25E91A7700168F3F /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311B25E91A7600168F3F /* ListItem.swift */; };
 		D33C325025E91A7700168F3F /* DatabaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C311D25E91A7600168F3F /* DatabaseClient.swift */; };
-		D33C325325E91A7700168F3F /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312025E91A7600168F3F /* ItemDetail.swift */; };
+		D33C325325E91A7700168F3F /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312025E91A7600168F3F /* DetailItem.swift */; };
 		D33C325525E91A7700168F3F /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312525E91A7600168F3F /* DetailWireframe.swift */; };
 		D33C325625E91A7700168F3F /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312625E91A7600168F3F /* ListWireframe.swift */; };
 		D33C325D25E91A7700168F3F /* DetailParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C312E25E91A7600168F3F /* DetailParams.swift */; };
@@ -81,7 +81,7 @@
 		D33C335125E9350500168F3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C334F25E9350500168F3F /* SceneDelegate.swift */; };
 		D33C335225E9350500168F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C335025E9350500168F3F /* AppDelegate.swift */; };
 		D33C335A25E9357200168F3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33C335925E9357200168F3F /* ContentView.swift */; };
-		D3F5D45525ED41A1006F6D3F /* Repository+ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5D45425ED41A1006F6D3F /* Repository+ItemDetail.swift */; };
+		D3F5D45525ED41A1006F6D3F /* Repository+DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5D45425ED41A1006F6D3F /* Repository+DetailItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,7 +129,7 @@
 		D33C311425E91A7600168F3F /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D33C311B25E91A7600168F3F /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		D33C311D25E91A7600168F3F /* DatabaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseClient.swift; sourceTree = "<group>"; };
-		D33C312025E91A7600168F3F /* ItemDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		D33C312025E91A7600168F3F /* DetailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
 		D33C312525E91A7600168F3F /* DetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
 		D33C312625E91A7600168F3F /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
 		D33C312E25E91A7600168F3F /* DetailParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailParams.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		D33C334F25E9350500168F3F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D33C335025E9350500168F3F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D33C335925E9357200168F3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D3F5D45425ED41A1006F6D3F /* Repository+ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+ItemDetail.swift"; sourceTree = "<group>"; };
+		D3F5D45425ED41A1006F6D3F /* Repository+DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+DetailItem.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,7 +318,7 @@
 			children = (
 				D33C311025E91A7600168F3F /* Repository.swift */,
 				D33C311125E91A7600168F3F /* Repository+ListItem.swift */,
-				D3F5D45425ED41A1006F6D3F /* Repository+ItemDetail.swift */,
+				D3F5D45425ED41A1006F6D3F /* Repository+DetailItem.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 			children = (
 				D33C311D25E91A7600168F3F /* DatabaseClient.swift */,
 				D33C311B25E91A7600168F3F /* ListItem.swift */,
-				D33C312025E91A7600168F3F /* ItemDetail.swift */,
+				D33C312025E91A7600168F3F /* DetailItem.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -728,7 +728,7 @@
 				D33C331825E91A7700168F3F /* Endpoints.swift in Sources */,
 				D33C330A25E91A7700168F3F /* CustomViewModifier.swift in Sources */,
 				D33C330525E91A7700168F3F /* BaseAssembly.swift in Sources */,
-				D33C325325E91A7700168F3F /* ItemDetail.swift in Sources */,
+				D33C325325E91A7700168F3F /* DetailItem.swift in Sources */,
 				D33C32A525E91A7700168F3F /* ListViewInput.swift in Sources */,
 				D33C324525E91A7700168F3F /* Repository.swift in Sources */,
 				D33C323725E91A7700168F3F /* Date+Custom.swift in Sources */,
@@ -772,7 +772,7 @@
 				D33C323825E91A7700168F3F /* TransformType+Custom.swift in Sources */,
 				D33C32A725E91A7700168F3F /* DetaiWireframeInput.swift in Sources */,
 				D33C326425E91A7700168F3F /* DetailAssembly.swift in Sources */,
-				D3F5D45525ED41A1006F6D3F /* Repository+ItemDetail.swift in Sources */,
+				D3F5D45525ED41A1006F6D3F /* Repository+DetailItem.swift in Sources */,
 				D33C331425E91A7700168F3F /* AppConstants.swift in Sources */,
 				D33C329125E91A7700168F3F /* ListViewOutput.swift in Sources */,
 				D33C326B25E91A7700168F3F /* ListPresenter.swift in Sources */,

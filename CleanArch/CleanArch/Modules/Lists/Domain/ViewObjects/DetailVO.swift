@@ -17,20 +17,17 @@ extension DetailView {
 
     class ViewObject: ObservableObject {
         @Published var state: DetailState
-        @Published var items: Results<ItemDetail>?
-        @Published var loading: Bool
-        @Published var itemTitle: String
+        @Published var viewTitle: String
+        @Published var item: Results<DetailItem>?
 
-        init(state: DetailState, items: Results<ItemDetail>?, loading: Bool, itemTitle: String) {
+        init(state: DetailState, viewTitle: String, item: Results<DetailItem>?) {
             self.state = state
-            self.items = items
-            self.loading = loading
-            self.itemTitle = itemTitle
+            self.viewTitle = viewTitle
+            self.item = item
         }
 
         static let placeholder = ViewObject(state: .placeholder,
-                                            items: nil,
-                                            loading: false,
-                                            itemTitle: "")
+                                            viewTitle: "",
+                                            item: nil)
     }
 }

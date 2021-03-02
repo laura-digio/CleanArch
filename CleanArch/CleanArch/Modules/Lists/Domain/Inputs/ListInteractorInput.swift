@@ -24,5 +24,5 @@
 import Foundation
 
 protocol ListInteractorInput {
-    func onFetch(username: String, completion: @escaping Handler<ListInteractor.BussinessObject>)
+    func onFetch(completion: @escaping Handler<ListInteractor.BussinessObject>)
 }

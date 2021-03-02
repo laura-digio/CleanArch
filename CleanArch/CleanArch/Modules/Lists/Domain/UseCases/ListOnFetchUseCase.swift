@@ -17,7 +17,7 @@ struct ListOnFetchUseCase: BaseUseCase {
         self.repository = repository
     }
 
-    func execute(with params: String, completion: @escaping Handler<ListInteractor.BussinessObject>) {
+    func execute(completion: @escaping Handler<ListInteractor.BussinessObject>) {
         // Cached data
         if let items = repository.fetchListItems() {
             do {
@@ -30,7 +30,7 @@ struct ListOnFetchUseCase: BaseUseCase {
         }
 
         // Remote data
-        repository.requestListItems(username: params) { count in
+        repository.requestListItems() { count in
             do {
                 let items = self.repository.fetchListItems()
                 let bo = try ListBOMapper().map(input: items)

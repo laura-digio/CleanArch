@@ -15,7 +15,7 @@ import Foundation
 
 protocol DetailViewOutput: ViewOutput {
     // MARK: - InteractorInput
-    func onFetch(condition: Int?)
+    func onFetch()
 
     // MARK: - WireframeInput
 }

@@ -1,22 +1,24 @@
 //
-//  ItemDetail.swift
+//  DetailItem.swift
 //  CleanArch
 //
 //  Created by Laura on 12/1/21.
 //
-//  Example: https://api.github.com/users/laura-digio/repos
+//  Example: https://api.github.com/users/laura-digio
 
 import Foundation
 import RealmSwift
 import ObjectMapper
 
-@objcMembers class ItemDetail: Object, Mappable, Model, Codable {
+@objcMembers class DetailItem: Object, Mappable, Model, Codable {
     dynamic var remoteSorting: Int = 1
     
     dynamic var id: Int = 0
+    dynamic var candidateKey: String = ""
     dynamic var name: String = ""
     dynamic var desc: String?
     dynamic var timestamp: Date?
+    dynamic var numRepos: Int = 0
 
     dynamic var _image: String =  ""
 
@@ -42,9 +44,11 @@ import ObjectMapper
 
     func mapping(map: Map) {
         id <- map["id"]
+        candidateKey <- map["login"]
         name <- map["name"]
-        desc <- map["description"]
+        desc <- map["bio"]
         timestamp <- (map["created_at"], DateTransform())
-        _image <- map["owner.avatar_url"]
+        numRepos <- (map["public_repos"], StringToIntTransform())
+        _image <- map["avatar_url"]
     }
 }

@@ -9,8 +9,8 @@ import Foundation
 import Moya
 
 enum GitHubAPI {
-    case userDetails(username: String)
-    case userRepositories(username: String)
+    case listItems(query: String = "SwiftUI", page: UInt = 0, perPage: UInt = 20)
+    case detail(username: String)
 }
 
 extension GitHubAPI: TargetType {
@@ -27,26 +27,31 @@ extension GitHubAPI: TargetType {
 
     var path: String {
         switch self {
-        case let .userDetails(username):
-            return "users/\(username)"
+        case .listItems:
+            return "search/repositories"
 
-        case let .userRepositories(username):
-            return "users/\(username)/repos"
+        case let .detail(username):
+            return "users/\(username)"
         }
     }
 
     var method: Moya.Method {
         switch self {
-        case .userDetails:
+        case .listItems:
             return .get
 
-        case .userRepositories:
+        case .detail:
             return .get
         }
     }
 
     var task: Task {
         switch self {
+        case let .listItems(query, page, perPage):
+            let parameters = ["q": query,
+                              "page": String(page),
+                              "per_page": String(perPage)]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         default:
             return .requestPlain
         }

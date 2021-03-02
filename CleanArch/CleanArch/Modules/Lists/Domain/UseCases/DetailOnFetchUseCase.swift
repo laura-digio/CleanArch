@@ -10,18 +10,18 @@ import Foundation
 struct DetailOnFetchUseCase: BaseUseCase {
     internal let repository: Repository
 
-    typealias Params = (itemTitle: String, itemID: Int, page: UInt)
+    typealias Params = (viewTitle: String, username: String)
     typealias Response = DetailInteractor.BussinessObject
 
     init(repository: Repository) {
         self.repository = repository
     }
 
-    func execute(with params: (itemTitle: String, itemID: Int, page: UInt), completion: @escaping Handler<DetailInteractor.BussinessObject>) {
+    func execute(with params: (viewTitle: String, username: String), completion: @escaping Handler<DetailInteractor.BussinessObject>) {
         // Cached data
-        let items = repository.fetchItemDetail(params.itemID)
+        let item = repository.fetchDetail(params.username)
         do {
-            let bo = try DetailBOMapper().map(input: (params.itemTitle, items, UInt(items?.count ?? 0)))
+            let bo = try DetailBOMapper().map(input: (params.viewTitle, item))
             completion(.success(bo))
         }
         catch {
@@ -29,10 +29,10 @@ struct DetailOnFetchUseCase: BaseUseCase {
         }
 
         // Remote data
-        repository.requestItemDetail(username: "laura-digio", page: params.page) { count in
+        repository.requestDetail(params.username) { count in
             do {
-                let items = self.repository.fetchItemDetail(params.itemID)
-                let bo = try DetailBOMapper().map(input: (params.itemTitle, items, count))
+                let item = repository.fetchDetail(params.username)
+                let bo = try DetailBOMapper().map(input: (params.viewTitle, item))
                 completion(.success(bo))
             }
             catch {

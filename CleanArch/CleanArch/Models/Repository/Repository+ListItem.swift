@@ -25,10 +25,10 @@ extension Repository {
 
 extension Repository {
 
-    func requestListItems(username: String, callback: @escaping (UInt) -> Void) {
+    func requestListItems(callback: @escaping (UInt) -> Void) {
         networkClient.cRequestListItems?.cancel()
-        networkClient.cRequestListItems = networkClient.provider.request(.userDetails(username: username)) { [self] result in
-            parseItems(model: ListItem.self, result: result, callback: callback)
+        networkClient.cRequestListItems = networkClient.provider.request(.listItems()) { [self] result in
+            parseItems(model: ListItem.self, result: result, keyPath: "items", callback: callback)
         }
     }
 }

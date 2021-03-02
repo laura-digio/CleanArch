@@ -8,12 +8,12 @@
 import Foundation
 import RealmSwift
 
-final class DetailBOMapper: BaseMapper<(itemTitle: String, items: Results<ItemDetail>?, lastCount: UInt), DetailInteractor.BussinessObject> {
+final class DetailBOMapper: BaseMapper<(viewTitle: String, item: Results<DetailItem>?),
+                                       DetailInteractor.BussinessObject> {
     init() {
         super.init { input -> DetailInteractor.BussinessObject in
-            return DetailInteractor.BussinessObject(items: input.items,
-                                                    lastCount: input.lastCount,
-                                                    itemTitle: input.itemTitle)
+            return DetailInteractor.BussinessObject(viewTitle: input.viewTitle,
+                                                    item: input.item)
         }
     }
 }

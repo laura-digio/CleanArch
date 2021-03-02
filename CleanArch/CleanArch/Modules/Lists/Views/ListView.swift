@@ -26,7 +26,6 @@ struct ListView: BaseView {
                 placeholderView()
             }
         }
-        .navigationBarTitle("lists")
         .onAppear {
             output?.onFetch()
         }

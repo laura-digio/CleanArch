@@ -13,15 +13,15 @@ struct DetailView: BaseView {
     @ObservedObject var viewObject: DetailView.ViewObject = .placeholder
 
     init() {
-        viewObject.itemTitle = ""
+        viewObject.viewTitle = ""
     }
 
     var body: some View {
         Group {
             switch viewObject.state {
             case .idle:
-                if let items = viewObject.items?.freeze() {
-                    contentView(items)
+                if let item = viewObject.item?.first?.freeze() {
+                    contentView(item)
                 }
                 else {
                     placeholderView()
@@ -30,34 +30,24 @@ struct DetailView: BaseView {
                 placeholderView()
             }
         }
-        .navigationBarTitle(viewObject.itemTitle)
+        .navigationBarTitle(viewObject.viewTitle)
         .onAppear {
-            output?.onFetch(condition: nil)
+            output?.onFetch()
         }
     }
 }
 
 extension DetailView: DetailViewInput {
     func refresh(_ viewObject: ViewObject) {
-        self.viewObject.itemTitle = viewObject.itemTitle
-        self.viewObject.loading = viewObject.loading
-        self.viewObject.items = viewObject.items
+        self.viewObject.item = viewObject.item
+        self.viewObject.viewTitle = viewObject.viewTitle
         self.viewObject.state = viewObject.state
     }
 }
 
 private extension DetailView {
-    func contentView(_ items: RealmSwift.Results<ItemDetail>) -> some View {
-        List {
-            Section(footer: CustomView.LoaderView(loading: viewObject.loading)) {
-                ForEach (items, id: \.id) { item in
-                    CustomView.ItemDetailCell(item)
-                        .onAppear {
-                            output?.onFetch(condition: item.id)
-                        }
-                }
-            }
-        }
+    func contentView(_ item: DetailItem) -> some View {
+        CustomView.DetailView(item)
     }
 
     func placeholderView() -> some View {

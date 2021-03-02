@@ -11,9 +11,7 @@ import RealmSwift
 extension DetailInteractor {
 
     struct BussinessObject {
-        var items: Results<ItemDetail>?
-        var lastCount: UInt
-        let itemsPerPage = 20
-        let itemTitle: String
+        let viewTitle: String
+        var item: Results<DetailItem>?
     }
 }

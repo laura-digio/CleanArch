@@ -4,7 +4,7 @@
 //
 //  Created by Laura on 12/1/21.
 //
-//  Example: https://api.github.com/users/laura-digio
+//  Example: https://api.github.com/search/repositories?q=swiftui&page=1&per_page=20
 
 import Foundation
 import RealmSwift
@@ -15,11 +15,12 @@ import ObjectMapper
 
     dynamic var id: Int = 0
     dynamic var name: String = ""
+    dynamic var desc: String?
     dynamic var createdAt: Date?
     dynamic var updatedAt: Date?
-    dynamic var numFollowers: Int = 0
+    dynamic var detailID: String = ""
 
-    dynamic var _avatarUrl: String = ""
+    dynamic var _image: String = ""
 
     required convenience init?(map: Map) {
         self.init()
@@ -31,12 +32,13 @@ import ObjectMapper
 
     // MARK: Computed properties
 
-    var avatarUrls: [URL] {
-        var images = [URL]()
-        if let image = URL(string: _avatarUrl) {
-            images.append(image)
-        }
-        return images
+    var image: URL? {
+        URL(string: _image)
+    }
+
+    var images: [URL] {
+        guard let imageURL = URL(string: _image) else { return [URL]() }
+        return [imageURL]
     }
 
     // MARK: Mapping
@@ -44,9 +46,10 @@ import ObjectMapper
     func mapping(map: Map) {
         id <- map["id"]
         name <- map["name"]
-        _avatarUrl <- map["avatar_url"]
+        desc <- map["description"]
         createdAt <- (map["created_at"], DateTransform())
         updatedAt <- (map["updated_at"], DateTransform())
-        numFollowers <- (map["followers"], StringToIntTransform())
+        detailID <- map["owner.login"]
+        _image <- map["owner.avatar_url"]
     }
 }

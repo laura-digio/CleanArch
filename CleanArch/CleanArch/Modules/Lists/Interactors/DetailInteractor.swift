@@ -23,8 +23,8 @@ class DetailInteractor: BaseInteractor {
 
 extension DetailInteractor: DetailInteractorInput {
 
-    func onFetch(page: UInt, completion: @escaping Handler<BussinessObject>) {
-        useCaseExecutor.execute(onFetchUseCase, with: (params?.itemTitle ?? "", params?.itemID ?? 0, page)) { result in
+    func onFetch(completion: @escaping Handler<BussinessObject>) {
+        useCaseExecutor.execute(onFetchUseCase, with: (params?.viewTitle ?? "", params?.username ?? "")) { result in
             completion(result)
         }
     }

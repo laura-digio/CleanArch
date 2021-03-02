@@ -18,7 +18,7 @@ struct NetworkClient {
     #endif
 
     var cRequestListItems: Cancellable?
-    var cRequestItemDetails: Cancellable?
+    var cRequestDetail: Cancellable?
 }
 
 class DefaultAlamofireManager: Alamofire.Session {

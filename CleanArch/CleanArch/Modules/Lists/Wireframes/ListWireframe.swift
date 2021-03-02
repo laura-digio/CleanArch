@@ -20,8 +20,8 @@ final class ListWireframe: BaseWireframe<
 
 extension ListWireframe: ListWireframeInput {
     func detailView(_ item: ListItem) -> DetailView {
-        let params = DetailParams(itemID: item.id,
-                                  itemTitle: item.name)
+        let params = DetailParams(viewTitle: item.name,
+                                  username: item.detailID)
         return DetailWireframe(params: params).view
     }
 }

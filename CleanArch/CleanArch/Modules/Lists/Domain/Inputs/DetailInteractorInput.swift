@@ -24,5 +24,5 @@
 import Foundation
 
 protocol DetailInteractorInput {
-    func onFetch(page: UInt, completion: @escaping Handler<DetailInteractor.BussinessObject>)
+    func onFetch(completion: @escaping Handler<DetailInteractor.BussinessObject>)
 }

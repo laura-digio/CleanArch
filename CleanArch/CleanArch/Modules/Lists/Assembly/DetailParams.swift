@@ -8,6 +8,6 @@
 import Foundation
 
 struct DetailParams {
-    let itemID: Int
-    let itemTitle: String
+    let viewTitle: String
+    let username: String
 }

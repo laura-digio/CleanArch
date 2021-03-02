@@ -13,27 +13,29 @@ import SDWebImageSwiftUI
 
 struct CustomView {
 
-    struct ExampleCustomView: View {
-        var body: some View {
-            ScrollView {
-                Text("TODO")
-            }
-            .navigationBarHidden(true)
+    struct DetailView: View {
+        let detailItem: DetailItem
+
+        init(_ detailItem: DetailItem) {
+            self.detailItem = detailItem
         }
-    }
-}
-
-// MARK: - Loaders
-
-extension CustomView {
-
-    struct LoaderView: View {
-        let loading: Bool
 
         var body: some View {
-            Group {
-                if loading {
-                    //ProgressView()
+            HStack(alignment: .top, spacing: 5) {
+                WebImage(url: detailItem.image)
+                    .resizable()
+                    .placeholder(Image(Assets.Icons.Placeholder.rawValue))
+                    .transition(.fade(duration: 0.5))
+                    .scaledToFit()
+                    .frame(width: 32, height: 32)
+                    .cornerRadius(1)
+                    .padding(.top, 4)
+                VStack(alignment: .leading) {
+                    Text(detailItem.name)
+                        .lineLimit(2)
+                    Text(detailItem.timestampPretty)
+                        .lineLimit(1)
+                        .foregroundColor(Color(Assets.Colors.CellTextSecondary.rawValue))
                 }
             }
         }
@@ -92,7 +94,7 @@ extension CustomView {
                     Image(icon)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 20, height: 20)
+                        .frame(width: 32, height: 32)
                         .background(Color.black)
                     Text(text)
                     Spacer()
@@ -126,7 +128,7 @@ extension CustomView {
                     .placeholder(Image(Assets.Icons.Placeholder.rawValue))
                     .transition(.fade(duration: 0.5))
                     .scaledToFit()
-                    .frame(width: 24, height: 24)
+                    .frame(width: 32, height: 32)
                     .cornerRadius(1)
                 Text(listItem.name)
                     .lineLimit(2)
@@ -134,37 +136,9 @@ extension CustomView {
             }
             .onAppear(perform: {
                 if images.count == 0 {
-                    images = listItem.avatarUrls
+                    images = listItem.images
                 }
             })
-        }
-    }
-
-    struct ItemDetailCell: View {
-        let itemDetail: ItemDetail
-
-        init(_ itemDetail: ItemDetail) {
-            self.itemDetail = itemDetail
-        }
-
-        var body: some View {
-            HStack(alignment: .top, spacing: 5) {
-                WebImage(url: itemDetail.image)
-                    .resizable()
-                    .placeholder(Image(Assets.Icons.Placeholder.rawValue))
-                    .transition(.fade(duration: 0.5))
-                    .scaledToFit()
-                    .frame(width: 24, height: 24)
-                    .cornerRadius(1)
-                    .padding(.top, 4)
-                VStack(alignment: .leading) {
-                    Text(itemDetail.name)
-                        .lineLimit(2)
-                    Text(itemDetail.timestampPretty)
-                        .lineLimit(1)
-                        .foregroundColor(Color(Assets.Colors.CellTextSecondary.rawValue))
-                }
-            }
         }
     }
 }

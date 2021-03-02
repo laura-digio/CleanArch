@@ -23,8 +23,8 @@ class ListInteractor: BaseInteractor {
 
 extension ListInteractor: ListInteractorInput {
 
-    func onFetch(username: String, completion: @escaping Handler<BussinessObject>) {
-        useCaseExecutor.execute(onFetchUseCase, with: username) { result in
+    func onFetch(completion: @escaping Handler<BussinessObject>) {
+        useCaseExecutor.execute(onFetchUseCase) { result in
             completion(result)
         }
     }
