@@ -17,25 +17,24 @@ struct DetailOnFetchUseCase: BaseUseCase {
         self.repository = repository
     }
 
-    func execute(with params: (viewTitle: String, username: String), completion: @escaping Handler<DetailInteractor.BussinessObject>) {
+    func execute(with params: (viewTitle: String, username: String),
+                 completion: @escaping Handler<DetailInteractor.BussinessObject>) {
         // Cached data
         let item = repository.fetchDetail(params.username)
         do {
-            let bo = try DetailBOMapper().map(input: (params.viewTitle, item))
-            completion(.success(bo))
-        }
-        catch {
+            let businessObject = try DetailBOMapper().map(input: (params.viewTitle, item))
+            completion(.success(businessObject))
+        } catch {
             completion(.failure(error))
         }
 
         // Remote data
-        repository.requestDetail(params.username) { count in
+        repository.requestDetail(params.username) { _ in
             do {
                 let item = repository.fetchDetail(params.username)
-                let bo = try DetailBOMapper().map(input: (params.viewTitle, item))
-                completion(.success(bo))
-            }
-            catch {
+                let businessObject = try DetailBOMapper().map(input: (params.viewTitle, item))
+                completion(.success(businessObject))
+            } catch {
                 completion(.failure(error))
             }
         }

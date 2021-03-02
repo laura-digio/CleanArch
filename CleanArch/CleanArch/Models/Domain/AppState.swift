@@ -14,7 +14,7 @@ final class AppState: Codable {
 
     @Published var selectedTab: Int = 1 {
         didSet {
-            let notificationName = Notification.Name(AppConstants.NotificationCenter.Keys.popToRoot.rawValue)
+            let notificationName = Notification.Name(AppConstants.NotificationCenterKeys.popToRoot.rawValue)
             NotificationCenter.default.post(name: notificationName, object: self, userInfo: nil)
         }
     }

@@ -14,8 +14,7 @@ struct DatabaseClient {
         do {
             let realm = try Realm()
             return realm
-        }
-        catch {
+        } catch {
             print(error)
             return nil
         }

@@ -9,10 +9,9 @@ import Foundation
 
 struct AppConstants {
 
-    // MARK: NotificationCenter
-    struct NotificationCenter {
-        enum Keys: String {
-            case popToRoot
-        }
+    // MARK: - NotificationCenter
+    enum NotificationCenterKeys: String {
+        case popToRoot
     }
+
 }

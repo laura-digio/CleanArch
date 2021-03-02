@@ -21,22 +21,20 @@ struct ListOnFetchUseCase: BaseUseCase {
         // Cached data
         if let items = repository.fetchListItems() {
             do {
-                let bo = try ListBOMapper().map(input: items)
-                completion(.success(bo))
-            }
-            catch {
+                let businessObject = try ListBOMapper().map(input: items)
+                completion(.success(businessObject))
+            } catch {
                 completion(.failure(error))
             }
         }
 
         // Remote data
-        repository.requestListItems() { count in
+        repository.requestListItems { _ in
             do {
                 let items = self.repository.fetchListItems()
-                let bo = try ListBOMapper().map(input: items)
-                completion(.success(bo))
-            }
-            catch {
+                let businessObject = try ListBOMapper().map(input: items)
+                completion(.success(businessObject))
+            } catch {
                 completion(.failure(error))
             }
         }

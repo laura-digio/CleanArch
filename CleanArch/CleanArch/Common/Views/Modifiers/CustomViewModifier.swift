@@ -17,6 +17,6 @@ struct ExampleTextModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .foregroundColor(disabled ? Color(Assets.Colors.TextDisabled.rawValue) : .white)
+            .foregroundColor(disabled ? Color(Assets.Colors.textDisabled.rawValue) : .white)
     }
 }

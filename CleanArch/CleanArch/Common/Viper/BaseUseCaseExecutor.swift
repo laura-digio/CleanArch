@@ -5,7 +5,7 @@
 //  Created by Laura on 12/1/21.
 //
 
-/**
+/*
  * ¡ArchiViper, el enemigo de MVC!
  */
 
@@ -16,8 +16,10 @@ public typealias Handler<U> = (Result<U, Error>) -> Void
 public protocol BaseUseCaseExecutor {
     func execute<UseCase: BaseUseCase, U>(_ useCase: UseCase, completion: @escaping Handler<U>)
     where U == UseCase.Response
-    
-    func execute<UseCase: BaseUseCase, Params, U>(_ useCase: UseCase, with params: Params, completion: @escaping Handler<U>)
+
+    func execute<UseCase: BaseUseCase,
+                 Params,
+                 U>(_ useCase: UseCase, with params: Params, completion: @escaping Handler<U>)
     where U == UseCase.Response, Params == UseCase.Params
 }
 

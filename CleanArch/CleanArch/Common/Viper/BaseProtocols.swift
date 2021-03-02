@@ -5,7 +5,7 @@
 //  Created by Laura on 12/1/21.
 //
 
-/**
+/*
  * ¡ArchiViper, el enemigo de MVC!
  */
 

@@ -15,7 +15,7 @@ enum GitHubAPI {
 
 extension GitHubAPI: TargetType {
 
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         return [
             "User-Agent": NetworkClientConstants.Base.UserAgent
         ]

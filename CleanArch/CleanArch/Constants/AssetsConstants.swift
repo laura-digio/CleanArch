@@ -13,17 +13,17 @@ enum Assets {
 
     // ICONS
     enum Icons: String {
-        case Placeholder = "iconPlaceholder"
-        case Favorites = "iconHeart"
+        case placeholder = "iconPlaceholder"
+        case favorites = "iconHeart"
     }
 
     // COLORS
     enum Colors: String {
-        case Main = "main"
-        case Error = "error"
-        case NavigationLink = "navigationLink"
-        case PlaceholderSecondary = "placeholderSecondary"
-        case CellTextSecondary = "cellTextSecondary"
-        case TextDisabled = "textDisabled"
+        case main
+        case error
+        case navigationLink
+        case placeholderSecondary
+        case cellTextSecondary
+        case textDisabled
     }
 }

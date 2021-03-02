@@ -5,7 +5,7 @@
 //  Created by Laura on 12/1/21.
 //
 
-/**
+/*
  * ¡ArchiViper, el enemigo de MVC!
  */
 
@@ -24,7 +24,7 @@ public extension BaseUseCase {
     func execute(completion: @escaping Handler<Response>) {
         fatalError("This method should be overriden")
     }
-    
+
     func execute(with params: Params, completion: @escaping Handler<Response>) {
         fatalError("This method should be overriden")
     }

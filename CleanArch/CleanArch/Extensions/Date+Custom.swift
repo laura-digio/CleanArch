@@ -13,23 +13,26 @@ extension Date {
         var output = ""
 
         let dateUpload = Calendar.current.startOfDay(for: self)
-        guard let days = Calendar.current.dateComponents([.day], from: dateUpload, to: Date()).day else { return output }
-        guard let months = Calendar.current.dateComponents([.month], from: dateUpload, to: Date()).month else { return output }
-        guard let years = Calendar.current.dateComponents([.year], from: dateUpload, to: Date()).year else { return output }
+        guard let days = Calendar.current.dateComponents([.day],
+                                                         from: dateUpload,
+                                                         to: Date()).day else { return output }
+        guard let months = Calendar.current.dateComponents([.month],
+                                                           from: dateUpload,
+                                                           to: Date()).month else { return output }
+        guard let years = Calendar.current.dateComponents([.year],
+                                                          from: dateUpload,
+                                                          to: Date()).year else { return output }
 
         if years > 0 {
             let formatString = NSLocalizedString("years count", comment: "")
             output = String.localizedStringWithFormat(formatString, years)
-        }
-        else if months > 0 {
+        } else if months > 0 {
             let formatString = NSLocalizedString("months count", comment: "")
             output = String.localizedStringWithFormat(formatString, months)
-        }
-        else if days > 0 {
+        } else if days > 0 {
             let formatString = NSLocalizedString("days count", comment: "")
             output = String.localizedStringWithFormat(formatString, days)
-        }
-        else {
+        } else {
             output = "today".localized()
         }
 

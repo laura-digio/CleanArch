@@ -42,8 +42,7 @@ struct Storage<T: Codable> {
         set {
             if newValue == nil {
                 UserDefaults.standard.removeObject(forKey: key)
-            }
-            else {
+            } else {
                 // Convert newValue to data
                 let data = try? JSONEncoder().encode(newValue)
 

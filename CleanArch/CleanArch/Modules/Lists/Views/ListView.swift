@@ -18,8 +18,7 @@ struct ListView: BaseView {
             case .idle:
                 if let items = viewObject.items?.freeze() {
                     contentView(items)
-                }
-                else {
+                } else {
                     placeholderView()
                 }
             case .placeholder:
@@ -41,7 +40,7 @@ extension ListView: ListViewInput {
 
 private extension ListView {
     func contentView(_ items: Results<ListItem>) -> some View {
-        List (items, id: \.id) { item in
+        List(items, id: \.itemID) { item in
             NavigationLink(destination: output?.detailView(item)) {
                 CustomView.ListItemCell(item)
             }
@@ -49,7 +48,7 @@ private extension ListView {
     }
 
     func placeholderView() -> some View {
-        CustomView.PlaceholderView(iconName: Assets.Icons.Favorites.rawValue,
+        CustomView.PlaceholderView(iconName: Assets.Icons.favorites.rawValue,
                                    textTitle: "placeholder_list_items_title".localized(),
                                    textBody: "placeholder_list_items_body".localized())
     }

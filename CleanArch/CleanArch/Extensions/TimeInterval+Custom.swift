@@ -11,8 +11,7 @@ extension TimeInterval {
     var customTime: String? {
         if self >= 3600 {
             return Formatter.Long.string(from: self)
-        }
-        else {
+        } else {
             return Formatter.Short.string(from: self)
         }
     }

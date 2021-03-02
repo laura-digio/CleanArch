@@ -5,9 +5,10 @@
 //  Created by Laura on 12/1/21.
 //
 
-/**
+/*
  * Repository pattern:
- * Abstracting the access to the data layer in a way that the business layer (use cases) can ignore the sources from where the data is coming.
+ * Abstracting the access to the data layer in a way that the business layer (use cases)
+ * can ignore the sources from where the data is coming.
  * - Sources: DB / File / Web service
  * We'll have at most one repository for each entity in the domain.
  */
@@ -33,8 +34,7 @@ extension Repository {
             try databaseClient.realm?.write({
                 databaseClient.realm?.deleteAll()
             })
-        }
-        catch {
+        } catch {
             #if DEBUG
             debugPrint(error)
             #endif
@@ -44,13 +44,12 @@ extension Repository {
 
 // MARK: - Generic parsers
 
-protocol Model: Object {
+protocol Model: Object, Mappable, Codable {
     var remoteSorting: Int { get set }
-    var id: Int { get set }
+    var itemID: Int { get set }
 }
 
 extension Repository {
-
     func parseItems<T: Model>(model: T.Type,
                               result: Result<Response, MoyaError>,
                               keyPath: String? = nil,
@@ -59,15 +58,15 @@ extension Repository {
         switch result {
         case let .success(response):
             do {
-                var items: [ListItem]?
+                var items: [T]?
                 if let keyPath = keyPath {
-                    if let json = (try response.mapJSON(failsOnEmptyData: false) as? NSDictionary)?.value(forKeyPath: keyPath) {
-                        items = Mapper<ListItem>().mapArray(JSONObject: json)
+                    if let json = (try response.mapJSON(failsOnEmptyData: false) as? NSDictionary)?
+                        .value(forKeyPath: keyPath) {
+                        items = parsedJSON(model: T.self, json: json)
                     }
-                }
-                else {
+                } else {
                     let json = try response.mapJSON(failsOnEmptyData: false)
-                    items = Mapper<ListItem>().mapArray(JSONObject: json)
+                    items = parsedJSON(model: T.self, json: json)
                 }
 
                 if let items = items {
@@ -77,22 +76,22 @@ extension Repository {
                         items.forEach { item in
                             if let newItem = databaseClient.realm?.create(T.self, value: item, update: .all) {
                                 newItem.remoteSorting = count
-                                parsedItems.append(newItem.id)
+                                parsedItems.append(newItem.itemID)
                                 count += 1
                             }
                         }
-                        
+
                         // Sync local with remote
                         if shouldRefresh {
-                            if let oldItems = databaseClient.realm?.objects(T.self).filter(NSPredicate(format: "NOT id IN %@", parsedItems)) {
+                            if let oldItems = databaseClient.realm?.objects(T.self)
+                                .filter(NSPredicate(format: "NOT itemID IN %@", parsedItems)) {
                                 databaseClient.realm?.delete(oldItems)
                             }
                         }
 
                         callback(UInt(items.count))
                     })
-                }
-                else {
+                } else {
                     callback(0)
                 }
             } catch {
@@ -102,8 +101,18 @@ extension Repository {
 
                 callback(0)
             }
-        case .failure(_):
+        case .failure:
             callback(0)
+        }
+    }
+}
+
+private extension Repository {
+    func parsedJSON<T: Model>(model: T.Type, json: Any) -> [T]? {
+        if let item = Mapper<T>().map(JSONObject: json) {
+            return [item]
+        } else {
+            return Mapper<T>().mapArray(JSONObject: json)
         }
     }
 }

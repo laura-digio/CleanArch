@@ -11,8 +11,9 @@ import Alamofire
 
 struct NetworkClient {
     #if DEBUG
+    private static let plugins = [NetworkLoggerPlugin(configuration: .init(logOptions: .requestMethod))]
     let provider = MoyaProvider<GitHubAPI>(session: DefaultAlamofireManager.sharedManager,
-                                          plugins: [NetworkLoggerPlugin(configuration: .init(logOptions: .requestMethod))])
+                                           plugins: plugins)
     #else
     let provider = MoyaProvider<GitHubAPI>(session: DefaultAlamofireManager.sharedManager)
     #endif

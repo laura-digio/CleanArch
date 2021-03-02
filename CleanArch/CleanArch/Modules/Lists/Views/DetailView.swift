@@ -22,8 +22,7 @@ struct DetailView: BaseView {
             case .idle:
                 if let item = viewObject.item?.first?.freeze() {
                     contentView(item)
-                }
-                else {
+                } else {
                     placeholderView()
                 }
             case .placeholder:
@@ -51,7 +50,7 @@ private extension DetailView {
     }
 
     func placeholderView() -> some View {
-        CustomView.PlaceholderView(iconName: Assets.Icons.Favorites.rawValue,
+        CustomView.PlaceholderView(iconName: Assets.Icons.favorites.rawValue,
                                    textTitle: "placeholder_item_details_title".localized(),
                                    textBody: "placeholder_item_details_body".localized())
     }

@@ -21,7 +21,7 @@ class DetailPresenter: BasePresenter {
 extension DetailPresenter: DetailViewOutput {
 
     func onFetch() {
-        interactor.onFetch() { [weak self] result in
+        interactor.onFetch { [weak self] result in
             self?.processResult(result)
         }
     }
@@ -33,10 +33,10 @@ private extension DetailPresenter {
 
     func processResult(_ result: Result<DetailInteractor.BussinessObject, Error>) {
         switch result {
-        case .success(let bo):
+        case .success(let businessObject):
             do {
-                let vo = try DetailVOMapper().map(input: bo)
-                viewInput?.refresh(vo)
+                let viewObject = try DetailVOMapper().map(input: businessObject)
+                viewInput?.refresh(viewObject)
             } catch {
                 processFailure(error)
             }

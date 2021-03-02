@@ -24,7 +24,7 @@ struct CustomView {
             HStack(alignment: .top, spacing: 5) {
                 WebImage(url: detailItem.image)
                     .resizable()
-                    .placeholder(Image(Assets.Icons.Placeholder.rawValue))
+                    .placeholder(Image(Assets.Icons.placeholder.rawValue))
                     .transition(.fade(duration: 0.5))
                     .scaledToFit()
                     .frame(width: 32, height: 32)
@@ -35,7 +35,7 @@ struct CustomView {
                         .lineLimit(2)
                     Text(detailItem.timestampPretty)
                         .lineLimit(1)
-                        .foregroundColor(Color(Assets.Colors.CellTextSecondary.rawValue))
+                        .foregroundColor(Color(Assets.Colors.cellTextSecondary.rawValue))
                 }
             }
         }
@@ -64,7 +64,7 @@ extension CustomView {
                     .minimumScaleFactor(0.5)
                 Text(textBody)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color(Assets.Colors.PlaceholderSecondary.rawValue))
+                    .foregroundColor(Color(Assets.Colors.placeholderSecondary.rawValue))
                     .lineLimit(3)
                     .minimumScaleFactor(0.5)
             }
@@ -76,29 +76,26 @@ extension CustomView {
 
 extension CustomView {
 
-    struct Control {
+    struct NavigationLink: View {
+        let icon: String
+        let text: String
+        let leadingPadding: CGFloat
 
-        struct NavigationLink: View {
-            let icon: String
-            let text: String
-            let leadingPadding: CGFloat
+        init(icon: String, text: String, leadingPadding: CGFloat = 8) {
+            self.icon = icon
+            self.text = text
+            self.leadingPadding = leadingPadding
+        }
 
-            init(icon: String, text: String, leadingPadding: CGFloat = 8) {
-                self.icon = icon
-                self.text = text
-                self.leadingPadding = leadingPadding
-            }
-
-            var body: some View {
-                HStack {
-                    Image(icon)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 32, height: 32)
-                        .background(Color.black)
-                    Text(text)
-                    Spacer()
-                }
+        var body: some View {
+            HStack {
+                Image(icon)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 32, height: 32)
+                    .background(Color.black)
+                Text(text)
+                Spacer()
             }
         }
     }
@@ -119,13 +116,13 @@ extension CustomView {
         var body: some View {
             HStack(alignment: .center, spacing: 6) {
                 WebImage(url: images.first)
-                    .onFailure(perform: { error in
+                    .onFailure(perform: { _ in
                         if images.count > 1 {
                             images.removeFirst()
                         }
                     })
                     .resizable()
-                    .placeholder(Image(Assets.Icons.Placeholder.rawValue))
+                    .placeholder(Image(Assets.Icons.placeholder.rawValue))
                     .transition(.fade(duration: 0.5))
                     .scaledToFit()
                     .frame(width: 32, height: 32)

@@ -10,30 +10,30 @@ import Foundation
 import RealmSwift
 import ObjectMapper
 
-@objcMembers class DetailItem: Object, Mappable, Model, Codable {
+@objcMembers class DetailItem: Object, Model {
     dynamic var remoteSorting: Int = 1
-    
-    dynamic var id: Int = 0
+
+    dynamic var itemID: Int = 0
     dynamic var candidateKey: String = ""
     dynamic var name: String = ""
     dynamic var desc: String?
     dynamic var timestamp: Date?
     dynamic var numRepos: Int = 0
 
-    dynamic var _image: String =  ""
+    dynamic var imageString: String =  ""
 
     required convenience init?(map: Map) {
         self.init()
     }
 
     override static func primaryKey() -> String? {
-        return "id"
+        return "itemID"
     }
 
     // MARK: Computed properties
 
     var image: URL? {
-        URL(string: _image)
+        URL(string: imageString)
     }
 
     var timestampPretty: String {
@@ -43,12 +43,12 @@ import ObjectMapper
     // MARK: Mapping
 
     func mapping(map: Map) {
-        id <- map["id"]
+        itemID <- map["id"]
         candidateKey <- map["login"]
         name <- map["name"]
         desc <- map["bio"]
         timestamp <- (map["created_at"], DateTransform())
         numRepos <- (map["public_repos"], StringToIntTransform())
-        _image <- map["avatar_url"]
+        imageString <- map["avatar_url"]
     }
 }
