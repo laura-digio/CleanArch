@@ -8,7 +8,6 @@
 * [Router / Wireframe](#router--wireframe)
 * [Assembly](#assembly)
   - [Dependency Injection](#dependency-injection)
-* [DataManager](#datamanager)
 
 ---
 
