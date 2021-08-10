@@ -14,7 +14,7 @@
 
 The data flow is the **communication** between **layers**.
 
-1. UI (ViewController) calls method from Presenter.
+1. UI (view) calls method from Presenter.
 2. Presenter executes a use case (interactor) that returns an Observable.
 3. This Observable is created on data layer and passed by domain layer.
 4. Presenter subscribes to this Observable to fetch the result from the repository.
@@ -35,7 +35,7 @@ Remember that each layer has its own entities & mappers and that in order to kee
 
 ### Presentation Layer
 
-Contains UI (*ViewControllers*) that are coordinated by *Presenters* which execute 1 or multiple Use cases (*Interactor*). Presentation Layer **depends on Domain Layer**.
+Contains UI (*views*) that are coordinated by *Presenters* which execute 1 or multiple Use cases (*Interactor*). Presentation Layer **depends on Domain Layer**.
 
 This layer only needs to execute use cases and display data.
 
