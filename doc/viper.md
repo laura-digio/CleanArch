@@ -35,10 +35,6 @@ This layer tells the **View** what to present once it receives the information f
 
 This layer contains the **models** used by the **Interactor**.
 
-- `Models/Repository/`
-- `Models/Domain/`
-- `Models/Realm/`
-
 ### Repository
 
 **Repository** is a **design pattern** that provides an abstraction of data. It allows us to abstract the domain layer from the data layer and also, inside data layer, the data repository from its data sources.
