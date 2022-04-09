@@ -1,0 +1,34 @@
+{
+    "topics": [
+        {
+            "id": "three-tier",
+            "title": "Three-tier architecture",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/three-tier.md"
+        },
+        {
+            "id": "solid_principles",
+            "title": "SOLID principles",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/solid_principles.md"
+         },
+         {
+             "id": "viper",
+             "title": "VIPER",
+             "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/viper.md"
+         },
+         {
+            "id": "Data propagation",
+            "title": "propagation",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/propagation.md"
+        },
+        {
+            "id": "design_patterns",
+            "title": "Design patterns",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/design_patterns.md"
+        },
+        {
+            "id": "references",
+            "title": "References",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/references.md"
+        }
+    ]
+}
