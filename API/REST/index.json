@@ -28,16 +28,16 @@
         "name": "References",
         "topics": [
             {
-                "title": "References",
+                "title": "List of links",
                 "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/references.md"
             }
         ]
     },
     "appleHIG": {
-         "name": "Apple Human Interface Guidelines",
+         "name": "Apple HIG",
          "topics": [
             {
-                "title": "Apple Human Interface Guidelines",
+                "title": "Human Interface Guidelines",
                 "link": "https://developer.apple.com/design/human-interface-guidelines"
             }
         ]
