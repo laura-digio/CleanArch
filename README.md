@@ -53,6 +53,15 @@ Clean architecture is the structure of layers for organizing our app so that it'
   * [Observer](/doc/design_patterns.md#observer)
   * [Repository](/doc/design_patterns.md#repository)
 
----
+
+# References
 
 - [References](/doc/references.md)
+
+# Apple Human Interface Guidelines
+
+Get in-depth information and UI resources for designing great apps that integrate seamlessly with Apple platforms.
+
+---
+
+- [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
