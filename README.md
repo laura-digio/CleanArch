@@ -20,7 +20,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
 
 ---
 
-- [VIPER](/doc/viper.md)
+- [The Clean Architecture - VIPER](/doc/viper.md)
   * [View](/doc/viper.md#view)
   * [Interactor](/doc/viper.md#interactor)
   * [Presenter](/doc/viper.md#presenter)
@@ -44,7 +44,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
 
 ---
 
-- [Design patterns](/doc/design_patterns.md)
+- [Design patterns and Anti-patterns](/doc/design_patterns.md)
   * [Singleton](/doc/design_patterns.md#singleton)
   * [Factory](/doc/design_patterns.md#factory)
   * [Abstract Factory](/doc/design_patterns.md#abstract-factory)
@@ -54,7 +54,7 @@ Clean architecture is the structure of layers for organizing our app so that it'
   * [Repository](/doc/design_patterns.md#repository)
 
 
-# References
+---
 
 - [References](/doc/references.md)
 
@@ -65,3 +65,25 @@ Get in-depth information and UI resources for designing great apps that integrat
 ---
 
 - [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
+
+# Xcode UI Testing and Unit Testing
+
+Create and run unit tests, performance tests, and UI tests for your Xcode project.
+
+---
+
+- [XCTest](https://developer.apple.com/documentation/xctest)
+
+# Debugging tools
+
+- [Instruments](https://developer.apple.com/videos/play/wwdc2019/411/)
+- [Charles Proxy](https://www.charlesproxy.com/)
+
+# Swift
+
+- [Language guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+  * [Closures](https://docs.swift.org/swift-book/LanguageGuide/Closures.html)
+  * [Extensions](https://docs.swift.org/swift-book/LanguageGuide/Extensions.html)
+  * [Protocols](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)
+  * [Generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html)
+- [Tips and tricks](https://www.hackingwithswift.com/articles/106/10-quick-swift-tips)
