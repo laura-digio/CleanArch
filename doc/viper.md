@@ -1,4 +1,4 @@
-# VIPER
+# The Clean Architecture - VIPER
 
 * [View](#view)
 * [Interactor](#interactor)

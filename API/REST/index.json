@@ -11,7 +11,7 @@
                 "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/solid_principles.md"
             },
             {
-                "title": "VIPER",
+                "title": "The Clean Architecture - VIPER",
                 "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/viper.md"
             },
             {
@@ -19,7 +19,7 @@
                 "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/propagation.md"
             },
             {
-                "title": "Design patterns",
+                "title": "Design patterns and Anti-patterns",
                 "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/design_patterns.md"
             }
         ]
