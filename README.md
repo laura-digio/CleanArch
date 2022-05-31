@@ -40,19 +40,13 @@ Clean architecture is the structure of layers for organizing our app so that it'
       * [Repository Interface](/doc/propagation.md#repository-interface)
     - [Data Layer](/doc/propagation.md#data-layer)
       * [Repository Implementation](/doc/propagation.md#repository-implementation)
-- [State management](/doc/state.md)
 
 ---
 
 - [Design patterns and Anti-patterns](/doc/design_patterns.md)
   * [Singleton](/doc/design_patterns.md#singleton)
-  * [Factory](/doc/design_patterns.md#factory)
-  * [Abstract Factory](/doc/design_patterns.md#abstract-factory)
-  * [Builder](/doc/design_patterns.md#builder)
-  * [Iterator](/doc/design_patterns.md#iterator)
   * [Observer](/doc/design_patterns.md#observer)
   * [Repository](/doc/design_patterns.md#repository)
-
 
 ---
 
