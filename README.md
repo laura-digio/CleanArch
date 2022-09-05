@@ -86,6 +86,13 @@ Create and run unit tests, performance tests, and UI tests for your Xcode projec
   * [Generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html)
 - [Tips and tricks](https://www.hackingwithswift.com/articles/106/10-quick-swift-tips)
 
+# SwiftUI
+
+Declare the user interface and behavior for your app on every platform.
+
+- [Documentation](https://developer.apple.com/documentation/swiftui)
+- [Tutorials](https://developer.apple.com/tutorials/swiftui)
+
 # APIs
 
 - [RESTful](https://www.codecademy.com/article/what-is-rest)
