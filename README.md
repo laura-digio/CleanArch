@@ -60,6 +60,10 @@ Get in-depth information and UI resources for designing great apps that integrat
 
 - [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines)
 
+# Apple Frameworks
+
+- [Combine](https://developer.apple.com/documentation/Combine)
+
 # Xcode UI Testing and Unit Testing
 
 Create and run unit tests, performance tests, and UI tests for your Xcode project.
@@ -81,3 +85,7 @@ Create and run unit tests, performance tests, and UI tests for your Xcode projec
   * [Protocols](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)
   * [Generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html)
 - [Tips and tricks](https://www.hackingwithswift.com/articles/106/10-quick-swift-tips)
+
+# APIs
+
+- [RESTful](https://www.codecademy.com/article/what-is-rest)
