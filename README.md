@@ -92,6 +92,7 @@ Declare the user interface and behavior for your app on every platform.
 
 - [Documentation](https://developer.apple.com/documentation/swiftui)
 - [Tutorials](https://developer.apple.com/tutorials/swiftui)
+- [Forums](https://developer.apple.com/forums/tags/swiftui/)
 
 # APIs
 
