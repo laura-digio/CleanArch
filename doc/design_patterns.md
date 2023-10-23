@@ -1,4 +1,4 @@
-# Design patterns and Anti-patterns
+# Design patterns
 
 * [Singleton](#singleton)
 * [Observer](#observer)
