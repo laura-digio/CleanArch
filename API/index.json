@@ -1,45 +1,28 @@
 {
-    "cleanCode": {
-        "name": "Clean Code",
-        "topics": [
-            {
-                "title": "Three-tier architecture",
-                "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/three-tier.md"
-            },
-            {
-                "title": "SOLID principles",
-                "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/solid_principles.md"
-            },
-            {
-                "title": "The Clean Architecture - VIPER",
-                "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/viper.md"
-            },
-            {
-                "title": "Data propagation",
-                "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/propagation.md"
-            },
-            {
-                "title": "Design patterns and Anti-patterns",
-                "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/design_patterns.md"
-            }
-        ]
-    },
-    "references": {
-        "name": "References",
-        "topics": [
-            {
-                "title": "List of links",
-                "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/references.md"
-            }
-        ]
-    },
-    "appleHIG": {
-         "name": "Apple HIG",
-         "topics": [
-            {
-                "title": "Human Interface Guidelines",
-                "link": "https://developer.apple.com/design/human-interface-guidelines"
-            }
-        ]
-    }
+    "topics": [
+        {
+            "title": "The Clean Architecture",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/clean_architecture.md"
+        },
+        {
+            "title": "Three-tier architecture",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/three-tier.md"
+        },
+        {
+            "title": "SOLID principles",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/solid_principles.md"
+        },
+        {
+            "title": "Design patterns",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/design_patterns.md"
+        },
+        {
+            "title": "References",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/references.md"
+        },
+        {
+            "title": "Glossary",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/glossary.md"
+        }
+    ]
 }
