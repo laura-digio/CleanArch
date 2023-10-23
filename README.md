@@ -1,6 +1,6 @@
 # Clean Architecture
 
-**Clean architecture** is the structure of layers for organizing our app so that it's easy to understand and easy to change as it grows.
+[**Clean Architecture**](/doc/clean_architecture.md) is the structure of layers for organizing our app so that it's easy to understand and easy to change as it grows.
 
 ---
 
@@ -17,10 +17,6 @@
   * [Liskov substitution](/doc/solid_principles.md#liskov-substitution)
   * [Interface segregation](/doc/solid_principles.md#interface-segregation)
   * [Dependency inversion](/doc/solid_principles.md#dependency-inversion)
-
----
-
-- [The Clean Architecture](/doc/clean_architecture.md)
 
 # Design patterns
 
