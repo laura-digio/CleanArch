@@ -31,3 +31,7 @@
 # [References](/doc/references.md)
 
 # [Glossary](/doc/glossary.md)
+
+# Resources
+
+Must-know high-level [resources](/doc/resources.md) for offering mobile digital solutions.
