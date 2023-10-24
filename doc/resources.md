@@ -22,10 +22,10 @@ Microsoft's [FaaS](/doc/glossary.md#faas).
 
 Google's [FaaS](/doc/glossary.md#faas).
 
-## [AWS API Gateway](https://aws.amazon.com/api-gateway)
+## [Amazon API Gateway](https://aws.amazon.com/api-gateway)
 
 Amazon's [API gateway](/doc/glossary.md#api-gateway).
 
 ## [Claudia.js](https://claudiajs.com/tutorials/hello-world-api-gateway.html)
 
-Create **serverless web API** using [AWS Lambda](/doc/resources#aws-lambda) and [API Gateway](/doc/glossary.md#api-gateway).
+Create **serverless web API** using [AWS Lambda](/doc/resources#aws-lambda) and **Amazon API Gateway**.
