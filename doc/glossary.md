@@ -24,9 +24,9 @@
 
 **FaaS** is a cloud computing service model that allows developers to run functions on demand. FaaS is a type of serverless computing, where the cloud provider manages the underlying infrastructure and resources. FaaS is often used to run short-lived functions in response to events. It is also known as serverless functions.
 
-- [AWS Lambda](http://aws.amazon.com/lambda)
-- [Azure Functions](http://azure.microsoft.com/products/functions)
-- [Google Cloud Functions](https://cloud.google.com/functions)
+- [AWS Lambda](/doc/resources.md#aws-lambda)
+- [Azure Functions](/doc/resources.md#azure-functions)
+- [Google Cloud Functions](/doc/resources.md#google-cloud-functions)
 
 # P
 
