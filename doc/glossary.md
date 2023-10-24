@@ -1,5 +1,9 @@
 # A
 
+## API Gateway
+
+**API Gateway** is an API proxy which is fully managed service. It helps you create APIs and publish, monitor and maintain them. It is scalable, can handle concurrent calls, authorization, traffic management, etc.
+
 # C
 
 ## Cloud computing
@@ -23,6 +27,12 @@
 - [AWS Lambda](http://aws.amazon.com/lambda)
 - [Azure Functions](http://azure.microsoft.com/products/functions)
 - [Google Cloud Functions](https://cloud.google.com/functions)
+
+# P
+
+## Proxy
+
+**Proxy** is a server that acts as an intermediary for requests from clients seeking resources from other servers.
 
 # S
 
