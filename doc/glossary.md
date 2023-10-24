@@ -1,8 +1,8 @@
 # A
 
-## API Gateway
+## API gateway
 
-**API Gateway** is an API proxy which is fully managed service. It helps you create APIs and publish, monitor and maintain them. It is scalable, can handle concurrent calls, authorization, traffic management, etc.
+**API gateway** is an API proxy which is fully managed service. It helps you create APIs and publish, monitor and maintain them. It is scalable, can handle concurrent calls, authorization, traffic management, etc.
 
 # C
 
