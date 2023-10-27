@@ -1,13 +1,19 @@
-# Clean Architecture
+# Software Architecture
 
-[**Clean Architecture**](/doc/clean_architecture.md) is the structure of layers for organizing our app so that it's easy to understand and easy to change as it grows.
+> The most important aspects of the internal design of a software system.
+
+A good architecture is important, otherwise it becomes slower and more expensive to add new capabilities in the future.
 
 ---
 
-- [Three-tier architecture](/doc/three-tier.md)
-  * [Presentation](/doc/three-tier.md#presentation)
-  * [Domain](/doc/three-tier.md#domain)
-  * [Data](/doc/three-tier.md#data)
+- [Physical Tiers / Logical Layers](/doc/tier_vs_layer.md)
+
+---
+
+- [Three-layer architecture](/doc/three-layer.md)
+  * [Presentation](/doc/three-layer.md#presentation)
+  * [Domain](/doc/three-layer.md#domain)
+  * [Data](/doc/three-layer.md#data)
 
 ---
 
@@ -17,6 +23,10 @@
   * [Liskov substitution](/doc/solid_principles.md#liskov-substitution)
   * [Interface segregation](/doc/solid_principles.md#interface-segregation)
   * [Dependency inversion](/doc/solid_principles.md#dependency-inversion)
+
+---
+
+- [Clean Architecture](/doc/clean_architecture.md) 
 
 # Design patterns
 

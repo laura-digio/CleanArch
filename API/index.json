@@ -1,16 +1,20 @@
 {
     "topics": [
         {
-            "title": "The Clean Architecture",
-            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/clean_architecture.md"
+            "title": "Physical tiers / Logical layers",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/tier_vs_layer.md"
         },
         {
-            "title": "Three-tier architecture",
-            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/three-tier.md"
+            "title": "Three-layer architecture",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/three-layer.md"
         },
         {
             "title": "SOLID principles",
             "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/solid_principles.md"
+        },
+        {
+            "title": "The Clean Architecture",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/clean_architecture.md"
         },
         {
             "title": "Design patterns",
@@ -23,6 +27,10 @@
         {
             "title": "Glossary",
             "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/glossary.md"
+        },
+        {
+            "title": "Resources",
+            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/resources.md"
         }
     ]
 }
