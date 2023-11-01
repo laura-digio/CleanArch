@@ -23,3 +23,5 @@ It usually uses lazy loading to create the single instance when it’s needed th
 ## Repository
 
 **Repository** is an **structural design pattern** that provides an abstraction of data, so that your application can work with a simple abstraction that has an interface. Using this pattern keeps domain objects persistence ignorant.
+
+![Repository pattern](assets/repository.png)
