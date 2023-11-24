@@ -1,6 +1,6 @@
 # Resources
 
-> Must-know high-level resources for offering mobile digital solutions.
+> Must-know high-level resources for offering holistic mobile solutions.
 
 ## [UI Goodies Inspiration](https://uigoodies.com/inspiration)
 
