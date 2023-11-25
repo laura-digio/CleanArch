@@ -26,7 +26,7 @@ A good architecture is important, otherwise it becomes slower and more expensive
 
 ---
 
-- [Clean Architecture](/doc/clean_architecture.md) 
+- [The Clean Architecture](/doc/clean_architecture.md) 
 
 # Design patterns
 
@@ -39,9 +39,3 @@ A good architecture is important, otherwise it becomes slower and more expensive
 ---
 
 # [References](/doc/references.md)
-
-# [Glossary](/doc/glossary.md)
-
-# Resources
-
-Must-know high-level [resources](/doc/resources.md) for offering mobile digital solutions.

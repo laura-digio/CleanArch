@@ -23,14 +23,6 @@
         {
             "title": "References",
             "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/references.md"
-        },
-        {
-            "title": "Glossary",
-            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/glossary.md"
-        },
-        {
-            "title": "Resources",
-            "link": "https://raw.githubusercontent.com/laura-digio/CleanArch/master/doc/resources.md"
         }
     ]
 }
